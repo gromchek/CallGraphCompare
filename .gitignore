@@ -1,0 +1,4 @@
+*.txt
+*.sh
+!run.sh
+normalize_funcs.py
