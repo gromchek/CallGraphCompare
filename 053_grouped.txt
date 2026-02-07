@@ -1,0 +1,819 @@
+[CBLPFile]
+- 006afb70 CBLPFile::LockChain
+
+[CCharSelectInfo]
+- 0088b9c0 CCharSelectInfo::GetNumCharacters
+
+[CDataStore]
+- 00466190 CDataStore::InternalDestroy
+- 004cfd20 CDataStore::Put
+
+[CDbgHelpDll]
+- 0077ca70 CDbgHelpDll::Load
+
+[CGBankInfo]
+- 0057b8d0 CGBankInfo::OpenBank
+
+[CGCamera]
+- 0087a210 CGCamera::RunShakes
+
+[CGChat]
+- 006fb700 CGChat::GetPendingChatMessages
+
+[CGGameObject_C]
+- 00514080 CGGameObject_C::ObjectReaction
+
+[CGGameObject_C_TypeBase]
+- 007116c0 CGGameObject_C_TypeBase::Use
+
+[CGGameUI]
+- 00707960 CGGameUI::DeleteCursorItem
+
+[CGGuildRegistrar]
+- 00599e90 CGGuildRegistrar::CloseRegistrar
+
+[CGItem_C]
+- 005a7a40 CGItem_C::GetDisplayID
+- 00707720 CGItem_C::PostInitWithStats
+
+[CGLootInfo]
+- 00589460 CGLootInfo::LootButtonItemStatsCallback
+- 00589920 CGLootInfo::ClearSlot
+
+[CGMerchantInfo]
+- 00584680 CGMerchantInfo::GetItemStats
+
+[CGPetitionInfo]
+- 005c5660 CGPetitionInfo::LeaveWorld
+- 005cea60 CGPetitionInfo::SetPetitionStats
+
+[CGPlayer_C]
+- 0051a250 CGPlayer_C::GetProficiency
+- 006d0e10 CGPlayer_C::OnQuestGiverQuestComplete
+- 006d2ea0 CGPlayer_C::XBuyItemInSlot
+- 006d6720 CGPlayer_C::ReportBagItemSubtypeMismatch
+
+[CGQuestInfo]
+- 0058c720 CGQuestInfo::SetLogDescription
+
+[CGReputationInfo]
+- 005d04b0 CGReputationInfo::IsAtWar
+
+[CGSpellBook]
+- 005ce880 CGSpellBook::InitializeGame
+
+[CGTradeInfo]
+- 00586520 CGTradeInfo::GetGameError
+- 00586dc0 CGTradeInfo::Update
+
+[CGUnit_C]
+- 006fdfb0 CGUnit_C::RenderDebugPathing
+- 0072a000 CGUnit_C::GetUnitName
+- 00742220 CGUnit_C::Initialize
+- 0074dcb0 CGUnit_C::GetSelectionHighlightColor
+
+[CGWorldFrame]
+- 005284d0 CGWorldFrame::OnWorldUpdate
+
+[CGxDevice]
+- 0068a170 CGxDevice::D3dEnumFormats
+
+[CGxDeviceOpenGl]
+- 0068bd20 CGxDeviceOpenGl::~CGxDeviceOpenGl
+- 0068ca80 CGxDeviceOpenGl::IDevRemoveGlContext
+- 0068cf60 CGxDeviceOpenGl::IDevAttachGlContext
+- 0068d610 CGxDeviceOpenGl::DeviceCreate
+
+[CLayoutFrame]
+- 0048a200 CLayoutFrame::FreePoints
+- 0048b2d0 CLayoutFrame::LoadXML
+
+[CMapLight]
+- 007a03c0 CMapLight::CreatePointAtten
+
+[CMouseEvent]
+- 00480de0 CMouseEvent::operator=
+
+[CSimpleButton]
+- 0096f920 CSimpleButton::SetStateTexture
+
+[CSimpleCheckbox]
+- 009624c0 CSimpleCheckbox::LoadXML
+
+[CSimpleEditBox]
+- 00965700 CSimpleEditBox::CreateCandidatesFrame
+- 00966140 CSimpleEditBox::PopulateCandidates
+- 00966710 CSimpleEditBox::UpdateVisibleText
+
+[CSimpleFontString]
+- 00482450 CSimpleFontString::WrapText
+- 004836d0 CSimpleFontString::PostLoadXML
+- 00483890 CSimpleFontString::SetTextHeight
+- 00486e30 CSimpleFontString::OnFrameSizeChanged
+
+[CSimpleFrame]
+- 0048f1f0 CSimpleFrame::LoadXML_Layers
+- 00492770 CSimpleFrame::~CSimpleFrame
+
+[CSimpleHyperlinkButton]
+- 00978760 CSimpleHyperlinkButton::SetHyperlink
+
+[CSimpleMessageFrameLineNode]
+- 00969720 CSimpleMessageFrameLineNode::CSimpleMessageFrameLineNode
+
+[CSimpleMessageScrollFrame]
+- 0096a8e0 CSimpleMessageScrollFrame::ScrollDown
+
+[CSimpleStatusBar]
+- 00961e30 CSimpleStatusBar::LoadXML
+
+[CSimpleTop]
+- 00494890 CSimpleTop::OnMouseWheel
+- 00495470 CSimpleTop::OnMouseDown
+- 00495b00 CSimpleTop::DisableEvents
+- 00496170 CSimpleTop::~CSimpleTop
+- 00496360 CSimpleTop::`vector_deleting_destructor'
+
+[CStatus]
+- 0047c1d0 CStatus::GetErrorStrLen
+- 0047c240 CStatus::GetErrorStrAlloc
+- 0047c500 CStatus::~CStatus
+
+[CTexture]
+- 004b8770 CTexture::CTexture
+
+[CTgaFile]
+- 006aa820 CTgaFile::Image
+- 006aa950 CTgaFile::SetImage
+- 006aade0 CTgaFile::Write
+
+[CVar]
+- 0055f4d0 CVar::Lookup
+
+[CWorldScene]
+- 006c0ba0 CWorldScene::Render
+
+[DBCache<class_CGPetition,int,class_HASHKEY_INT>]
+- 0067ef70 DBCache<class_CGPetition,int,class_HASHKEY_INT>::GetRecord
+
+[DBCache<class_GuildStats_C,int,class_HASHKEY_INT>]
+- 0067d930 DBCache<class_GuildStats_C,int,class_HASHKEY_INT>::GetRecord
+
+[DBCache<class_ItemStats_C,int,class_HASHKEY_INT>]
+- 0067a0f0 DBCache<class_ItemStats_C,int,class_HASHKEY_INT>::CancelCallback
+- 0067ca30 DBCache<class_ItemStats_C,int,class_HASHKEY_INT>::GetRecord
+
+[DBCache<class_NameCache,unsigned___int64,class_CHashKeyGUID>]
+- 0067d770 DBCache<class_NameCache,unsigned___int64,class_CHashKeyGUID>::GetRecord
+
+[DBCache<class_PageTextCache_C,int,class_HASHKEY_INT>]
+- 0067f4c0 DBCache<class_PageTextCache_C,int,class_HASHKEY_INT>::GetRecord
+
+[DBCache<class_PetNameCache,int,class_HASHKEY_INT>]
+- 0067ea30 DBCache<class_PetNameCache,int,class_HASHKEY_INT>::GetRecord
+
+[DBCache<class_QuestCache,int,class_HASHKEY_INT>]
+- 0067de90 DBCache<class_QuestCache,int,class_HASHKEY_INT>::GetRecord
+
+[DNStars]
+- 009abb00 DNStars::Initialize
+
+[EvtThread]
+- 0047e600 EvtThread::~EvtThread
+
+[FriendList]
+- 0054b1c0 FriendList::HandleStatus
+- 006fad80 FriendList::AddFriends
+- 0084c660 FriendList::SendWho
+
+[ItemStats_C]
+- 0098d910 ItemStats_C::Unpack
+
+[NPCText]
+- 0098d4c0 NPCText::Unpack
+
+[NTempest]
+- 004cfbb0 NTempest::C3Vector::C3Vector
+- 0061a1f0 NTempest::CMath::fuint_n
+- 007a0ed0 NTempest::CDynTable<class_FogQ>::CDynTable<class_FogQ>
+- 007f0d40 NTempest::CDynTable<class_LightQE>::CDynTable<class_LightQE>
+- 00984730 NTempest::CMemBlock::CMemBlock
+
+[NetClient]
+- 0087ded0 NetClient::Destroy
+
+[OsNet]
+- 0086d770 OsNet::TCPNET::LogWrite
+- 0086dc90 OsNet::TCPACCEPT::Init
+- 0086de70 OsNet::TCPCONN::SendSync
+- 0086e0c0 OsNet::SLTCPCONN::ContinueWrite
+- 0086e1c0 OsNet::SLTCPCONN::Selected
+- 0086e2e0 OsNet::NETCONN::NETCONN
+- 0086e550 OsNet::TCPCONN::TCPCONN
+- 0086e720 OsNet::TCPCONN::Send
+- 0086ebd0 OsNet::IOTCPCONN::IOTCPCONN
+- 0086ed30 OsNet::SLTCPCONN::SLTCPCONN
+- 0086ee00 OsNet::TCPNET::TcpMakeConn
+- 0086efe0 OsNet::TCPNET::IoPump
+- 0086f1c0 OsNet::TCPNET::Pump
+
+[OsTimeManager]
+- 007dca40 OsTimeManager::OsTimeManager
+
+[ParticleSystemManager]
+- 00981200 ParticleSystemManager::~ParticleSystemManager
+- 00981270 ParticleSystemManager::Destroy
+
+[ProfileInternal]
+- 004bbd00 ProfileInternal::PrfStrToInt
+
+[SEvent]
+- 00774900 SEvent::SEvent
+
+[SFile]
+- 0087ee60 SFile::OpenEx
+
+[SRWLock]
+- 00774360 SRWLock::IAllocEvent
+- 00774410 SRWLock::IFreeEvent
+- 007744f0 SRWLock::IAllocEventOrIncRefCount
+- 00774ca0 SRWLock::SUNNLockEnter
+- 00774da0 SRWLock::SURWLockEnter
+
+[SSyncObject]
+- 007748e0 SSyncObject::~SSyncObject
+- 00921a00 SSyncObject::SSyncObject
+
+[Sound]
+- 0087c710 Sound::Initialize
+
+[TEXTLINETEXTURE]
+- 006c4cd0 TEXTLINETEXTURE::~TEXTLINETEXTURE
+
+[TSFixedArray<unsigned_int>]
+- 00466910 TSFixedArray<unsigned_int>::ReallocData
+
+[TSHashTable<struct_WORDLIST,class_HASHKEY_LANGUAGE>]
+- 005063f0 TSHashTable<struct_WORDLIST,class_HASHKEY_LANGUAGE>::InternalDelete
+
+[WORLDTEXTSTRING]
+- 007e66f0 WORLDTEXTSTRING::RecreateString
+
+[WowConnection]
+- 0078c500 WowConnection::DoMessageReads
+
+[WowConnectionNet]
+- 004694c0 WowConnectionNet::~WowConnectionNet
+
+[XMLNode]
+- 005f4b00 XMLNode::XMLNode
+- 00815110 XMLNode::GetAttributeByName
+
+[unnamed namespace]
+- 00401280 NotifyHandler
+- 004016a0 DisplayErrorLevelStatus
+- 00401840 PrintFilterMask
+- 004018d0 SetFilterMask
+- 00401a10 ErrorDisplayFilterCallback
+- 00401a30 GammaCallback
+- 00401b60 ClientRegisterConsoleCommands
+- 00401ff0 CameraInitialize
+- 00403320 ClientServices_SetAccountName
+- 00403460 LogObjectInfo
+- 004038f0 ClntObjMgrObjectPtr
+- 00403de0 LookupResultsHandler
+- 00404ad0 ShutdownFileAccess
+- 00404b00 LogZoneInfo
+- 00404b80 WowLogHeader
+- 0040a990 CreateLightningObj
+- 0040ca10 __alloca_probe
+- 0040ca50 @luaD_growstack@8
+- 0040cfdc Player_C_AppFocusMovementHandler
+- 0040d06e Div
+- 0040efed _zlib_compress@20
+- 00414359 is_alpha
+- 00417111 OsClipboardGetString
+- 00417a07 CreatePlanarQuadGeometry
+- 0041c654 _kernel32_GetProcAddress_Thunk@0
+- 0041c69e _user32_SetWindowLongA_Thunk@0
+- 0041c732 _kernel32_MultiByteToWideChar_Thunk@0
+- 0041c8c9 _strcmpiC@8
+- 0041c998 _driveandpathC@12
+- 0041ca35 _LoadGodot@0
+- 0041cc02 _ResolveThunk@20
+- 0041cd64 _GodotFailGetCPInfo@8
+- 0041ce05 _GodotFailIsValidCodePage@4
+- 0041ce35 _GodotFailMultiByteToWideChar@24
+- 0041cedf _GodotFailGetClipboardData@4
+- 0041cf6f _GodotFailMessageBoxW@16
+- 0041d0b0 EventDoMessageLoop
+- 0041d190 @FT_Stream_Pos@4
+- 0041d930 doemit
+- 0042cf20 _SFileReadFile@20
+- 00431800 DeleteIdHashTable
+- 00439880 _SMemFindNextBlock@16
+- 00451e20 RestoreFog
+- 00456a00 @SSignatureVerifyStream_Finish@12
+- 0045a6f0 _SMemHeapGetDetails@8
+- 0047c090 GetGlobalStatusObj
+- 0047cc10 PropGetSelectedContext
+- 0047cc70 PropCreateContext
+- 0047cc90 operator_delete
+- 0047d0d0 EventGetCurrentContext
+- 0047e680 IEvtSchedulerCreateContext
+- 0047e8a0 ResetSyncState
+- 0047ea70 DestroySchedulerThread
+- 0047edf0 PutContext
+- 0047f02f EventProcessOnce
+- 004808a0 UpdateSyncKeyState
+- 004809a0 UpdateSyncState
+- 0048a5f0 FragmentSourceRectangles
+- 0048cf30 CSimpleMessageScrollFrame_AddMessage
+- 0048d780 CSimpleFontString_SetText
+- 0048d970 CSimpleHTML_SetTextColor
+- 0048fef0 CGTooltip_SetOwner
+- 0049d950 CSimpleFontString_SetAlphaGradient
+- 0049fef0 CSimpleFrame_Raise
+- 004a12d0 FrameScript_ExecuteV
+- 004a8570 CaptureScreen
+- 004a8b60 ILayerDestroy
+- 004a8b80 ILayerInitialize
+- 004a8ba0 ILayerPaint
+- 004a8d00 ScrnPaint
+- 004a8d20 ScrnInitialize
+- 004a8e00 IStockInitialize
+- 004b4f90 SysMsgAdd
+- 004b5170 FileError
+- 004b5bb0 RequestImageDimensions
+- 004b5e80 UpdateBlpTextureAsync
+- 004b7020 FillInSolidTexture
+- 004b7aa0 UpdateTgaTexture
+- 004b7bd0 PumpBlpTextureAsync
+- 004b8a50 TextureLoadImage
+- 004b8be0 CreateBlpTexture
+- 004b9480 GetTexture
+- 004b95b0 CreateTgaTexture
+- 004ba980 IPerfRemoteLoggingStartup
+- 004be040 TextBlockWrapText
+- 004c9bf0 SndInterfaceWorldDestroy
+- 004cfb80 SysMsgSetCallback
+- 004d0a70 $E75
+- 004d2390 Script_CastShapeshiftForm
+- 004d2f90 CCommand_HeapUsage
+- 004dfd00 CharCreateRegisterScriptFunctions
+- 004e1e20 SndInterfaceUnregisterVocalScriptFunctions
+- 004f92a0 SmartScreenRectShutdown
+- 004fbb20 StringToChatType
+- 004fbc60 Script_ChatFrameLog
+- 004fcef0 ChatRegisterScriptFunctions
+- 004fe330 ChannelPlayerCommand
+- 004fe460 ChannelCommand
+- 0050b1d0 UnitCombatLogShowXPGained
+- 0050f630 LockLog
+- 00512280 UnloadScriptFunctions
+- 00512b60 ItemPushItemStatsCallback
+- 00513e00 MirrorTimerToName
+- 00517e00 PlacedFrameCallback
+- 00518280 SmartScreenRectGetGridPos
+- 005183a0 LoadPlacedFrames
+- 005199a0 MirrorTimerLabel
+- 0052bbc0 TradeNameCallback
+- 00530dc7 StripQuotes
+- 00537df0 _SRgnDuplicate@12
+- 00543650 WorldMapRegisterScriptFunctions
+- 00543680 WorldMapUnregisterScriptFunctions
+- 0054d280 IModelTestRay
+- 0055dc90 UIBindingsRegisterScriptFunctions
+- 0055dcc0 UIBindingsUnegisterScriptFunctions
+- 0056d4b0 UpdateTextureDefault
+- 0056d960 FriendListNameCallbackWithSort
+- 00576b50 GetForcedAnimIndex
+- 00579590 QuestParserParseText
+- 00579e50 SpellParserReplaceText
+- 00584450 MerchantRegisterScriptFunctions
+- 00584480 MerchantUnregisterScriptFunctions
+- 00586080 TradeItemStatsCallback
+- 005868e0 TradeInfoRegisterScriptFunctions
+- 00586910 TradeInfoUnregisterScriptFunctions
+- 00588e60 LootInfoRegisterScriptFunctions
+- 00588e90 LootInfoUnregisterScriptFunctions
+- 0058c550 QuestInfoRegisterScriptFunctions
+- 0058c580 QuestInfoUnregisterScriptFunctions
+- 005918e0 $E162
+- 00593db0 GetServiceTypeFromString
+- 00593f70 ClassTrainerRegisterScriptFunctions
+- 00593fa0 ClassTrainerUnregisterScriptFunctions
+- 00598e10 TabardCreationRegisterScriptFunctions
+- 00598e40 TabardCreationUnregisterScriptFunctions
+- 005994c0 CGTabardModelFrame_Save
+- 00599f80 GuildRegistrarRegisterScriptFunctions
+- 00599fb0 GuildRegistrarUnregisterScriptFunctions
+- 005a78c0 Spell_C_GetTargettingSpell
+- 005a8020 ActionBarRegisterScriptFunctions
+- 005ceb00 PetitionInfoRegisterScriptFunctions
+- 005ceb30 PetitionInfoUnregisterScriptFunctions
+- 005cff60 ReputationInfoRegisterScriptFunctions
+- 005cff90 ReputationInfoUnregisterScriptFunctions
+- 005d31f0 PetInfoRegisterScriptFunctions
+- 005d3220 PetInfoUnregisterScriptFunctions
+- 005da3a0 TradeSkillRegisterScriptFunctions
+- 005da3d0 TradeSkillUnregisterScriptFunctions
+- 005de100 TradeSkillItemCallback
+- 005de8f0 QuestQueryCounterCallback
+- 005de930 QuestQueryCallback
+- 005de980 QuestFailedCallback
+- 005de9e0 CreatureQueryCallback
+- 005dea10 ObjectQueryCallback
+- 005dea40 ItemQueryCallback
+- 005dfd20 QuestLogRegisterScriptFunctions
+- 005dfd50 QuestLogUnregisterScriptFunctions
+- 005e7760 GuildNameCallback
+- 005e78f0 CharacterInfoRegisterScriptFunctions
+- 005e7c00 GetSlotFromLua
+- 005ed930 _SBigToBinaryBuffer@16
+- 005f4660 ConsoleCommand_TypeExec
+- 005f4b80 ConsoleCommand_CloseExec
+- 005fd2c0 InputControlInitialize
+- 005fd630 ValidateIsInRange
+- 005fe2c0 CameraRegisterScriptFunctions
+- 005fe2f0 CameraUnregisterScriptFunctions
+- 00608880 ScriptEventsInitialize
+- 0060c260 UnitUpdateHandler
+- 00616920 CursorResetCursor
+- 006176a0 GetAlphaMask
+- 0061936e SetPortraitTexture
+- 0061dce0 TooltipObjectLockItemStatsCallback
+- 0061dd20 TooltipCorpseNameCallback
+- 0061dd60 TooltipSpellItemStatsCallback
+- 00625940 CGTooltip_SetText
+- 006259e0 CGTooltip_SetSpell
+- 006263e0 CGTooltip_SetCraftSpell
+- 0062e520 CGTooltip_SetLootItem
+- 0062e670 CGTooltip_SetQuestItem
+- 0062e790 CGTooltip_SetQuestLogItem
+- 0062e900 CGTooltip_SetTrainerService
+- 0062eae0 CGTooltip_SetTradeSkillItem
+- 0062ed70 CGTooltip_SetMerchantItem
+- 0062eff0 CGTooltip_SetTradePlayerItem
+- 0062f1e0 CGTooltip_SetTradeTargetItem
+- 0062f420 IReadCameraTarget
+- 0062fc20 CGTooltip_SetBagItem
+- 006301a0 CGTooltip_SetCraftItem
+- 00634910 ClientDBStringLookup
+- 00634950 _D3DXGetTargetDescByName@12
+- 006349f0 @FT_Read_Stream_At@16
+- 00635680 InitializeHandlerPlayer
+- 00635b40 DBCache_RegisterHandlers
+- 0067fa80 _SCmdRegisterArgument@32
+- 006908a0 UnbindGlExtensions
+- 006a2040 _SFileCalcFileCrc@4
+- 006a2410 SetupPixelFormat
+- 006a2660 RemoveGlContext
+- 006a2a50 AttachGlContext
+- 006ab6c0 CalcLevelOffset
+- 006b32c0 ReverseWhoisResponseHandler
+- 006b5030 PrintWho
+- 006b8720 OnWhoList
+- 006bd900 GxuFontGetWrappedTextHeight
+- 006bde80 GxuFontCreateFont
+- 006bdf90 GxuFontDestroyFont
+- 006be230 GxuFontInitialize
+- 006c5120 LoadRibbonMaterial
+- 006c58f0 GxuFontShutdown
+- 006cb990 RandomRollNameQueryCallback
+- 006cc440 OnGuildInfo
+- 006ccf10 OnGuildRoster
+- 006cd0e0 CCommand_SetFaction
+- 006cd8c0 QuestRewardItemCallback
+- 006cd940 QuestFailedCallback
+- 006cdeb0 OnProficiency
+- 006ce0c0 OnLearnedSpell
+- 006d7d70 QuestLootQuestQueryCallback
+- 006d7f10 OnQuestGiverEvent
+- 006d8030 OnQuestUpdate
+- 006d8410 OnTrainerEvent
+- 006d84f0 OnGroupCancel
+- 006d8870 OnGroupList
+- 006da4a0 SkillRankChangeHandler
+- 006daa80 SendChatEvent
+- 006db6f0 SwapItemsStatsCallback
+- 006dbbe0 AutoEquipStatsCallback
+- 006dbc60 ResurrectNameQueryCallback
+- 006dbd00 OnResurrectRequest
+- 006dc810 Player_C_GetModelName
+- 006dd360 GuildCharterTurnInCallback
+- 006dd680 RenderGeosetPrep
+- 006deef0 OnNpcPetitionEvent
+- 006df050 OnInitialSpells
+- 006e2e90 OnPlayerEvent
+- 006e4fd0 OnUpdateStackCount
+- 006e7840 OnSupercededSpell
+- 006ec2c0 MovementInitialize
+- 00703c30 Trade_C_UseCursorItem
+- 00703c50 Trade_C_GetProposedEnchantment
+- 00703cb0 Trade_C_GetPlayerTradeGold
+- 00703cc0 Trade_C_GetTargetTradeGold
+- 007076e0 __ftol
+- 00707a30 FrameScriptGetSpellString
+- 0070a850 AddInventoryArtHash
+- 0070be30 PageTextHandler
+- 0070bef0 CustomAnimHandler
+- 0070c050 ValidateName
+- 0070c880 Script_CloseItemText
+- 00718ca0 @FT_MulDiv@12
+- 00732100 LogThreads
+- 0073f590 OnMonsterMoveEvent
+- 0074e050 ParseCommand
+- 00752100 _SFileLoadFileEx2@32
+- 00763cb0 ConsoleCommand_RepeatHandler
+- 00764ee0 ConsoleCommand_CharSpacing
+- 00764f30 ConsoleCommand_DefaultSettings
+- 007650a0 ConsoleCommand_FontSize
+- 00765170 ConsoleCommand_Font
+- 00765400 ConsoleCommand_CurrentSettings
+- 007654a0 ConsoleCommand_FontColor
+- 00765670 ConsoleCommand_BufferSize
+- 00765700 NormalBlockHandler
+- 007660d0 UnregisterHandlers
+- 00766320 s_CreatePathDirectories
+- 007681f0 SetCommandHandler
+- 00768420 ConsoleCommand_Ver
+- 00768660 ConsoleCommand_Help
+- 0076b2a0 AddLineToExecFile
+- 0076b3b0 AddToHistory
+- 0076e470 StormRtlDestroy
+- 0076e4e0 FatalError
+- 0076f420 bjhash
+- 00770f70 GetErrorString
+- 00771040 SErrInitialize
+- 00771070 CanBreakToDebugger
+- 007711c0 CreateErrorLogFile
+- 007712d0 CreateErrorLog
+- 007714e0 GetExceptionNameWin32
+- 007717f0 _SErrIsDisplayingError@0
+- 007719e0 UndecorateObjectName
+- 00771a80 ProcessTextures
+- 00772670 _SErrReportNamedResourceLeak@8
+- 00772760 ExceptionFilterWin32
+- 00772ba0 ConvertNumber
+- 00772c20 ConvertString
+- 00772c90 GenerateError
+- 00772da0 ProcessFile
+- 00772e70 FindFlagDef
+- 00772f60 PerformConversion
+- 007730e0 ProcessCurrentFlag
+- 00773160 ProcessFlags
+- 007732f0 ProcessToken
+- 00773a30 _StormGetInstance@0
+- 007746b0 WaitMultiplePtr
+- 007753e0 PrependDefaultDir
+- 00778c30 @z_adler32@12
+- 0077cc10 sLogHeader
+- 0077cca0 sLogMemoryHexDump
+- 0077ce70 sGetPathLeaf
+- 0077cec0 sLogExeFile
+- 0077cf00 sLogDateTimeString
+- 0077cf70 sLogUserName
+- 0077cfe0 sLogComputerName
+- 0077d040 sLogMemory
+- 0077d210 sGetLogicalAddress
+- 0077d310 sDbgHelpGetStackFrameInfo
+- 0077d4f0 sLogDbgHelpStackFrame
+- 0077d690 CmdMemOutput
+- 0077d6c0 sShowOutOfMemory
+- 0077d7c0 sLogDbgHelpStackTrace
+- 0077db10 sLogX86ManualStackTrace
+- 0077dd50 sLogX86ContextRegisters
+- 0077de30 LogComputerInfoHeader
+- 0077e040 LogMiniDump
+- 0077e670 LogMachineState
+- 0077e9a0 SServerInitialize
+- 0078fc40 TransformAABox
+- 007e1f60 ValidateGuildName
+- 007e2730 UpdateTime
+- 007e2a50 ReceiveServerTime
+- 007e2bd0 ClientInitializeGameTime
+- 007e3a20 ConsoleCommand_ShadowLOD
+- 007e4a40 ShadowInit
+- 007e70d0 WorldTextInitialize
+- 007e7bb0 TaxiMapInitialize
+- 007eae60 GuildGetTabardCost
+- 007ece40 ConsoleCommand_SkySunGlare
+- 007edbe0 _SUniConvertUTF16to8@24
+- 007f3a10 ViolenceLevelsInitialize
+- 007f3f40 MinimapGetPartyMembers
+- 007f5070 SetupQuad
+- 007f5240 BuildPathName
+- 007f5760 SetupTextureHandles
+- 007f5930 MinimapUpdatePosition
+- 007f6540 LoadMD5Names
+- 007fcca0 GetStringReason
+- 007fdb50 Spell_C_GetMinMaxPoints
+- 007fea80 SpellMissingItemCallback
+- 007fecc0 Spell_C_CancelSpell
+- 00806dd0 SpellStart
+- 00808200 Spell_C_SpellFailed
+- 00809af0 CastResultHandler
+- 0080abe0 ItemCheckCooldownCallback
+- 0080ac90 SendCast
+- 0080c790 Spell_C_TargetSpell
+- 0080e1b0 SpellGo
+- 0080fee0 SpellStartHandler
+- 00813be0 FrameXML_StoreHashNode
+- 00814f60 StringToDrawLayer
+- 008154e0 StringToBOOL
+- 00815500 @lua_isstring@8
+- 00815600 LoadXML_Value
+- 00815740 LoadXML_Dimensions
+- 00815910 LoadXML_Insets
+- 00815fa0 LoadXML_String
+- 00816960 @luaL_setn@12
+- 008178f0 @luaL_loadfile@8
+- 00819730 @luaL_getn@8
+- 00821930 GetRealmsEventHandler
+- 00826a60 @lua_pushcclosure@12
+- 00835df0 __aulldiv
+- 0084a450 HashNewModel
+- 0084aed0 ProfileCreate
+- 0084af40 BuildSimpleGeoset
+- 0084d480 @luaO_str2d@8
+- 0084d580 @luaO_pushvfstring@12
+- 0084dab0 @lua_checkstack@8
+- 0084de50 @lua_pushvalue@8
+- 0084ded0 @lua_typename@8
+- 0084e070 @lua_tonumber@8
+- 0084e0b0 @luaM_irealloc@24
+- 0084e1f0 @lua_remove@8
+- 0084e2d0 @lua_pushnumber@12
+- 0084e300 @lua_pushlstring@12
+- 0084e3d0 _lua_pushfstring
+- 0084e4d0 @lua_pushstring@8
+- 0084e560 @lua_pcall@16
+- 0084e6e0 @lua_newtable@4
+- 0084e900 @lua_setmetatable@8
+- 0084ea00 @lua_rawseti@12
+- 0084eb40 @lua_rawget@8
+- 0084ebf0 @lua_call@12
+- 0084ef30 @lua_error@4
+- 0084ef50 SOutputDebugString
+- 0084ef90 @lua_concat@8
+- 0084f0d0 _luaO_pushfstring
+- 0084f210 @luaL_where@8
+- 0084f2c0 @luaL_checkstack@12
+- 0084f3b0 @luaL_openlib@16
+- 0084f520 @luaL_prepbuffer@4
+- 0084f560 @luaL_addlstring@12
+- 0084f610 @luaL_addvalue@4
+- 0084f6c0 @luaL_ref@8
+- 0084f8b0 @luaL_argerror@12
+- 0084f960 @luaL_typerror@12
+- 0084f9f0 @luaL_checklstring@12
+- 0084fa50 @luaL_checktype@12
+- 0084fbd0 @luaL_optnumber@16
+- 0084fe40 @lua_getstack@12
+- 00850830 @luaG_errormsg@4
+- 00850a90 @lua_getinfo@12
+- 00850b60 @luaG_typeerror@12
+- 00850bf0 @luaG_concaterror@12
+- 00850c20 @luaG_aritherror@12
+- 00850c60 @luaG_ordererror@12
+- 008548f0 ObjectAllocUsage
+- 00855cd0 @luaK_codeABx@16
+- 00856010 @luaD_callhook@12
+- 00856150 @lua_yield@8
+- 00856550 @luaD_precall@8
+- 00856ea0 @luaV_tostring@8
+- 008573c0 @luaV_settable@16
+- 00857820 @luaV_equalval@12
+- 00857900 @luaV_concat@12
+- 00859160 @luaV_execute@4
+- 0085ba50 @luaH_get@8
+- 0085bab0 @luaC_link@12
+- 0085bbe0 @luaT_gettm@12
+- 0085bc10 @luaT_gettmbyobj@12
+- 0085c2e0 @luaH_new@12
+- 0085c3a0 @luaH_getnum@8
+- 0085c520 @luaH_set@12
+- 0085c590 @luaH_setnum@12
+- 0085cd40 @luaF_newLclosure@12
+- 0085d740 @luaM_growaux@24
+- 0085d9e0 @luaX_syntaxerror@8
+- 0085e600 @luaX_lex@8
+- 00861ad0 @luaY_parser@12
+- 00861e80 @luaK_concat@12
+- 00861ed0 @luaK_checkstack@8
+- 00861f10 @luaK_reserveregs@8
+- 008620f0 @luaK_numberK@12
+- 00862160 @luaK_setcallreturns@12
+- 00862390 @luaK_fixline@8
+- 008623b0 @luaK_code@12
+- 008625f0 @luaK_jump@4
+- 008626e0 @luaK_dischargevars@8
+- 00862a80 @luaK_exp2nextreg@8
+- 00862b00 @luaK_exp2anyreg@8
+- 00862b60 @luaK_exp2val@8
+- 00862b90 @luaK_prefix@12
+- 00862c90 @luaK_storevar@12
+- 00862d80 @luaK_self@12
+- 00863350 @luaK_posfix@16
+- 00863580 @luaK_patchtohere@8
+- 00863a40 @z_deflate@8
+- 00864890 @_tr_flush_block@16
+- 00864dc0 @z_deflateInit2_@32
+- 00869710 OsInputGetCodePage
+- 0086b2d0 OsGetVersion
+- 0086cdb0 OsIMEGetClauseInfo
+- 0086cf90 OsIMEEnable
+- 0086d1d0 OsIMEGetCandidates
+- 008780b0 FSoundAllocCallback
+- 008780f0 FSoundFreeCallback
+- 00879ae0 IModelGeosetAdd
+- 00879f30 IModelHandleGeosetAdd
+- 0087e010 StopWorldIdleHandler
+- 00880a50 _GodotFailMessageBoxExW@20
+- 00887d10 _SFileReadFileEx@24
+- 0088b821 OsGetTime
+- 0088d0c0 @luaH_getstr@8
+- 00895deb _kernel32_CreateProcessW_Thunk@0
+- 00895ea4 _kernel32_CreateFileW_Thunk@0
+- 00895fa7 _user32_GetClipboardData_Thunk@0
+- 0089603b _kernel32_GetDiskFreeSpaceExW_Thunk@0
+- 008960ce _ImmGetCompositionStringA@16
+- 008960d4 _ImmAssociateContext@8
+- 008960e0 _ImmAssociateContextEx@12
+- 0089c6f0 LineSegmentIntersectBox
+- 008a0976 ___WSAFDIsSet@8
+- 008a3810 _D3DXAssembleShader@28
+- 008c8280 QuestParserGenderConditional
+- 008d63d0 SetItemCooldown
+- 008eb680 WatchdogThreadProc
+- 0095e350 TextureFreeGxTex
+- 0096e9c0 CSimpleButton_RegisterForClicks
+- 00971800 CSimpleFrame_SetBackdropColor
+- 00973330 CSimpleMessageScrollFrame_ScrollDown
+- 00976fd0 StringToButtonState
+- 00977280 CSimpleButton_SetButtonState
+- 0097d730 $E43
+- 00990830 @FT_Alloc@12
+- 00990880 @FT_Free@8
+- 009912f0 @FT_Get_Module_Interface@8
+- 009913a0 @FT_Seek_Stream@8
+- 009913e0 @FT_Skip_Stream@8
+- 009914a0 T2_Forget_Element
+- 009914f0 @FT_Access_Frame@8
+- 009915a0 @FT_Forget_Frame@4
+- 009915f0 @FT_Get_Short@4
+- 00991690 @FT_Read_Char@8
+- 00991700 @FT_Read_Short@8
+- 009917f0 @FT_Read_Fields@12
+- 00992130 @FT_Realloc@16
+- 00992d70 @FT_Extract_Frame@12
+- 009933c0 fnt_load_font
+- 00993790 FNT_Init_Face
+- 00993bb0 read_pfb_tag
+- 00993c00 T1_New_Parser
+- 00993d90 hexa_value
+- 00993dc0 T1_Decrypt
+- 00993e00 T1_Get_Private_Dict
+- 00994bb0 is_space
+- 00994c30 parse_font_name
+- 00994e20 parse_encoding
+- 00995230 parse_charstrings
+- 00995610 parse_dict
+- 00995890 T1_Open_Face
+- 00995ba0 Get_Interface
+- 00996ac0 TT_Load_Programs
+- 00996bf0 TT_Access_Glyph_Frame
+- 009977d0 TT_Load_Glyph
+- 00997a20 TT_Init_Face
+- 0099abb0 TT_Load_Hdmx
+- 0099b8d0 Load_SBit_Const_Metrics
+- 0099c250 Load_SBit_Metrics
+- 0099c570 Load_SBit_Single
+- 0099c6a0 Load_SBit_Image
+- 0099c960 TT_Load_SBit_Image
+- 0099cac0 Load_Format_20
+- 0099ccb0 Load_Format_25
+- 0099cd80 Load_Post_Names
+- 0099d0b0 get_sfnt_glyph_name
+- 0099d120 SFNT_Get_Interface
+- 0099f520 PS_Unicode_Value
+- 0099f630 compare_uni_maps
+- 009a12d0 CID_New_Parser
+- 009a16a0 cid_parse_dict
+- 009a1830 cid_read_subrs
+- 009a1b20 CID_Open_Face
+- 009a1c40 CID_Init_Face
+- 009a2c20 t2_new_cff_index
+- 009a2d90 t2_done_cff_index
+- 009a2dd0 t2_explicit_cff_index
+- 009a2e40 T2_Access_Element
+- 009a2ee0 T2_Get_Name
+- 009a2f60 T2_Get_String
+- 009a2ff0 CFF_Load_FD_Select
+- 009a30f0 CFF_Load_SubFont
+- 009a3370 T2_Load_CFF_Font
+- 009a3850 T2_StrCopy
+- 009a38b0 T2_Init_Face
+- 009ab9c0 SpellGetCastTargets
+

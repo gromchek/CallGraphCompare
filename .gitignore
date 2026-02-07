@@ -1,4 +1,11 @@
 *.txt
 *.sh
 !run.sh
+!410.txt
+!410_grouped.txt
+!501.txt
+!501_grouped.txt
+!053.txt
+!053_grouped.txt
 normalize_funcs.py
+compare_funcs.py
