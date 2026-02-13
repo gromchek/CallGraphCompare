@@ -1,7 +1,6 @@
 FUN_004038f0, ClntObjMgrObjectPtr, 004038f0, 004b10b0, 1.00
 FUN_0041cc02, _ResolveThunk@20, 0041cc02, 006ee5c3, 1.00
 FUN_00512280, UnloadScriptFunctions, 00512280, 004e6850, 1.00
-FUN_008154e0, StringToBOOL, 008154e0, 006d74d0, 1.00
 FUN_006aa950, CTgaFile::SetImage, 006aa950, 005aa650, 1.00
 FUN_006cb990, RandomRollNameQueryCallback, 006cb990, 005de760, 1.00
 FUN_00772da0, ProcessFile, 00772da0, 00640120, 1.00
@@ -11,7 +10,6 @@ FUN_007f6540, LoadMD5Names, 007f6540, 006c0490, 1.00
 FUN_00634910, ClientDBStringLookup, 00634910, 00554dc0, 1.00
 FUN_0067ca30, DBCache<class_ItemStats_C,int,class_HASHKEY_INT>::GetRecord, 0067ca30, 00569f20, 1.00
 FUN_00772f60, PerformConversion, 00772f60, 0063fd30, 1.00
-FUN_00808200, Spell_C_SpellFailed, 00808200, 006cd3c0, 1.00
 FUN_0085d9e0, @luaX_syntaxerror@8, 0085d9e0, 006e2e00, 1.00
 FUN_009a1830, cid_read_subrs, 009a1830, 007dec60, 1.00
 FUN_009a2c20, t2_new_cff_index, 009a2c20, 007e0170, 1.00
@@ -22,7 +20,6 @@ FUN_00772c20, ConvertString, 00772c20, 0063ffb0, 1.00
 FUN_007753e0, PrependDefaultDir, 007753e0, 00642bd0, 1.00
 FUN_0099c6a0, Load_SBit_Image, 0099c6a0, 007d9bf0, 1.00
 FUN_00466910, TSFixedArray<unsigned_int>::ReallocData, 00466910, 0041fcc0, 1.00
-FUN_0047c500, CStatus::~CStatus, 0047c500, 0040d880, 1.00
 FUN_004b8a50, TextureLoadImage, 004b8a50, 00470620, 1.00
 FUN_00763cb0, ConsoleCommand_RepeatHandler, 00763cb0, 00629ba0, 1.00
 FUN_0084f520, @luaL_prepbuffer@4, 0084f520, 006d9c10, 1.00
@@ -66,6 +63,7 @@ FUN_00765400, ConsoleCommand_CurrentSettings, 00765400, 00629c50, 0.92
 FUN_0076b2a0, AddLineToExecFile, 0076b2a0, 00631d70, 0.92
 FUN_00995610, parse_dict, 00995610, 007d2a20, 0.92
 FUN_0077d040, sLogMemory, 0077d040, 0064b750, 0.92
+FUN_007f3f40, MinimapGetPartyMembers, 007f3f40, 006c2a30, 0.92
 FUN_005de8f0, QuestQueryCounterCallback, 005de8f0, 00508330, 0.92
 FUN_009a16a0, cid_parse_dict, 009a16a0, 007dea10, 0.91
 FUN_007711c0, CreateErrorLogFile, 007711c0, 00637950, 0.91
@@ -75,7 +73,6 @@ FUN_007714e0, GetExceptionNameWin32, 007714e0, 00637fb0, 0.91
 FUN_0077cfe0, sLogComputerName, 0077cfe0, 0064b5b0, 0.91
 FUN_00403460, LogObjectInfo, 00403460, 004036a0, 0.91
 FUN_0077cca0, sLogMemoryHexDump, 0077cca0, 0064b860, 0.91
-FUN_007f3f40, MinimapGetPartyMembers, 007f3f40, 006c2a30, 0.91
 FUN_007f5070, SetupQuad, 007f5070, 006c0e20, 0.91
 FUN_004018d0, SetFilterMask, 004018d0, 00402b80, 0.91
 FUN_006b5030, PrintWho, 006b5030, 005b2430, 0.91
@@ -138,7 +135,6 @@ FUN_004fe330, ChannelPlayerCommand, 004fe330, 004ede20, 0.89
 FUN_00517e00, PlacedFrameCallback, 00517e00, 004e6990, 0.89
 FUN_00401b60, ClientRegisterConsoleCommands, 00401b60, 00402600, 0.89
 FUN_005fd2c0, InputControlInitialize, 005fd2c0, 005401c0, 0.89
-FUN_004b4f90, SysMsgAdd, 004b4f90, 0046e1a0, 0.89
 FUN_007f0d40, NTempest::CDynTable<class_LightQE>::CDynTable<class_LightQE>, 007f0d40, 006bdc70, 0.89
 FUN_0062eae0, CGTooltip_SetTradeSkillItem, 0062eae0, 005391c0, 0.89
 FUN_00815740, LoadXML_Dimensions, 00815740, 006d7630, 0.89
@@ -149,13 +145,13 @@ FUN_006da4a0, SkillRankChangeHandler, 006da4a0, 005d9200, 0.89
 FUN_0062eff0, CGTooltip_SetTradePlayerItem, 0062eff0, 005397f0, 0.89
 FUN_00608880, ScriptEventsInitialize, 00608880, 00543980, 0.89
 FUN_004fe460, ChannelCommand, 004fe460, 004eda30, 0.89
+FUN_0050b1d0, UnitCombatLogShowXPGained, 0050b1d0, 006211b0, 0.89
 FUN_007fcca0, GetStringReason, 007fcca0, 006cd9f0, 0.89
 FUN_005183a0, LoadPlacedFrames, 005183a0, 004e62d0, 0.89
 FUN_00771040, SErrInitialize, 00771040, 00636ec0, 0.88
 FUN_0062f1e0, CGTooltip_SetTradeTargetItem, 0062f1e0, 00539980, 0.88
 FUN_007f5240, BuildPathName, 007f5240, 006c2480, 0.88
 FUN_008573c0, @luaV_settable@16, 008573c0, 006dc140, 0.88
-FUN_0050b1d0, UnitCombatLogShowXPGained, 0050b1d0, 006211b0, 0.88
 FUN_009624c0, CSimpleCheckbox::LoadXML, 009624c0, 00777f80, 0.88
 FUN_0097d730, $E43, 0097d730, 0047c190, 0.88
 FUN_007e2a50, ReceiveServerTime, 007e2a50, 006b1310, 0.88
@@ -184,7 +180,6 @@ FUN_0096e9c0, CSimpleButton_RegisterForClicks, 0096e9c0, 00787740, 0.88
 FUN_006c58f0, GxuFontShutdown, 006c58f0, 005bdd00, 0.88
 FUN_0041c732, _kernel32_MultiByteToWideChar_Thunk@0, 0041c732, 006ede38, 0.87
 FUN_005de980, QuestFailedCallback, 005de980, 0050a170, 0.86
-FUN_0072a000, CGUnit_C::GetUnitName, 0072a000, 006010d0, 0.86
 FUN_009a2f60, T2_Get_String, 009a2f60, 007dfe30, 0.85
 FUN_0084f9f0, @luaL_checklstring@12, 0084f9f0, 006d9700, 0.85
 FUN_0077cf70, sLogUserName, 0077cf70, 0064b550, 0.84
@@ -291,7 +286,6 @@ FUN_0096f920, CSimpleButton::SetStateTexture, 0096f920, 00777770, 0.71
 FUN_006d8870, OnGroupList, 006d8870, 005e00e0, 0.71
 FUN_00862160, @luaK_setcallreturns@12, 00862160, 006e4cd0, 0.71
 FUN_0048fef0, CGTooltip_SetOwner, 0048fef0, 00537880, 0.71
-FUN_0084c660, FriendList::SendWho, 0084c660, 005b2f90, 0.71
 FUN_0060c260, UnitUpdateHandler, 0060c260, 005445c0, 0.71
 FUN_0041c654, _kernel32_GetProcAddress_Thunk@0, 0041c654, 006ee092, 0.71
 FUN_0076e4e0, FatalError, 0076e4e0, 006349b0, 0.70
@@ -337,7 +331,6 @@ FUN_00772760, ExceptionFilterWin32, 00772760, 00637eb0, 0.64
 FUN_0085cd40, @luaF_newLclosure@12, 0085cd40, 006de150, 0.63
 FUN_00770f70, GetErrorString, 00770f70, 00636f90, 0.63
 FUN_00766320, s_CreatePathDirectories, 00766320, 0062d610, 0.63
-FUN_0047c1d0, CStatus::GetErrorStrLen, 0047c1d0, 0040dd10, 0.63
 FUN_00773a30, _StormGetInstance@0, 00773a30, 0063bcc0, 0.63
 FUN_004a8b80, ILayerInitialize, 004a8b80, 0046c420, 0.63
 FUN_005de930, QuestQueryCallback, 005de930, 00508d40, 0.63
@@ -390,7 +383,6 @@ FUN_006d7d70, QuestLootQuestQueryCallback, 006d7d70, 005df270, 0.59
 FUN_0061dd60, TooltipSpellItemStatsCallback, 0061dd60, 00534510, 0.59
 FUN_009977d0, TT_Load_Glyph, 009977d0, 007d3c30, 0.59
 FUN_00764f30, ConsoleCommand_DefaultSettings, 00764f30, 00629a50, 0.59
-FUN_0047c240, CStatus::GetErrorStrAlloc, 0047c240, 0040dd50, 0.59
 FUN_004f92a0, SmartScreenRectShutdown, 004f92a0, 0052eaa0, 0.59
 FUN_00862390, @luaK_fixline@8, 00862390, 006e5900, 0.59
 FUN_009912f0, @FT_Get_Module_Interface@8, 009912f0, 007cef20, 0.59
@@ -427,7 +419,6 @@ FUN_005dea40, ItemQueryCallback, 005dea40, 00509930, 0.57
 FUN_0070c880, Script_CloseItemText, 0070c880, 0050bdb0, 0.57
 FUN_00993bb0, read_pfb_tag, 00993bb0, 007d2720, 0.57
 FUN_009a3850, T2_StrCopy, 009a3850, 007e0860, 0.57
-FUN_0084a450, HashNewModel, 0084a450, 00421580, 0.57
 FUN_00401a30, GammaCallback, 00401a30, 00402e80, 0.57
 FUN_00496360, CSimpleTop::`vector_deleting_destructor', 00496360, 0075fa70, 0.57
 FUN_0070bef0, CustomAnimHandler, 0070bef0, 005f00e0, 0.57
@@ -473,6 +464,7 @@ FUN_0084e1f0, @lua_remove@8, 0084e1f0, 006d84b0, 0.56
 FUN_007f5930, MinimapUpdatePosition, 007f5930, 006c1390, 0.56
 FUN_004e1e20, SndInterfaceUnregisterVocalScriptFunctions, 004e1e20, 007c8930, 0.56
 FUN_0084f0d0, _luaO_pushfstring, 0084f0d0, 006ddd70, 0.56
+FUN_00809af0, CastResultHandler, 00809af0, 006d09f0, 0.55
 FUN_006263e0, CGTooltip_SetCraftSpell, 006263e0, 005395c0, 0.55
 FUN_004b7bd0, PumpBlpTextureAsync, 004b7bd0, 00471a70, 0.55
 FUN_00495b00, CSimpleTop::DisableEvents, 00495b00, 00761ac0, 0.55
@@ -483,7 +475,6 @@ FUN_004a8d20, ScrnInitialize, 004a8d20, 0046bdf0, 0.55
 FUN_00965700, CSimpleEditBox::CreateCandidatesFrame, 00965700, 00779290, 0.55
 FUN_00990880, @FT_Free@8, 00990880, 007cd4d0, 0.55
 FUN_005cea60, CGPetitionInfo::SetPetitionStats, 005cea60, 00515720, 0.55
-FUN_00809af0, CastResultHandler, 00809af0, 006d09f0, 0.55
 FUN_0047e8a0, ResetSyncState, 0047e8a0, 0041a000, 0.55
 FUN_006e7840, OnSupercededSpell, 006e7840, 005df7f0, 0.55
 FUN_005994c0, CGTabardModelFrame_Save, 005994c0, 00525ea0, 0.55
@@ -510,7 +501,6 @@ FUN_008620f0, @luaK_numberK@12, 008620f0, 006e4ca0, 0.54
 FUN_0089c6f0, LineSegmentIntersectBox, 0089c6f0, 00433e30, 0.54
 FUN_00635b40, DBCache_RegisterHandlers, 00635b40, 00565440, 0.54
 FUN_005f4b00, XMLNode::XMLNode, 005f4b00, 006d80d0, 0.54
-FUN_0084aed0, ProfileCreate, 0084aed0, 007becd0, 0.54
 FUN_00752100, _SFileLoadFileEx2@32, 00752100, 006512f0, 0.54
 FUN_004694c0, WowConnectionNet::~WowConnectionNet, 004694c0, 005b6750, 0.54
 FUN_0056d960, FriendListNameCallbackWithSort, 0056d960, 005b0eb0, 0.54
@@ -579,6 +569,7 @@ FUN_004c9bf0, SndInterfaceWorldDestroy, 004c9bf0, 0049c2c0, 0.51
 FUN_0084d480, @luaO_str2d@8, 0084d480, 006dda70, 0.51
 FUN_006d2ea0, CGPlayer_C::XBuyItemInSlot, 006d2ea0, 005dd1b0, 0.51
 FUN_008548f0, ObjectAllocUsage, 008548f0, 004ac910, 0.51
+FUN_0072cf70, PetNameChangeHandler, 0072cf70, 00603870, 0.51
 FUN_007719e0, UndecorateObjectName, 007719e0, 00637850, 0.51
 FUN_0084e900, @lua_setmetatable@8, 0084e900, 006d8dd0, 0.51
 FUN_00414359, is_alpha, 00414359, 007d1510, 0.51
@@ -590,11 +581,11 @@ FUN_00403320, ClientServices_SetAccountName, 00403320, 005ae3a0, 0.51
 FUN_00856550, @luaD_precall@8, 00856550, 006da550, 0.50
 FUN_00589460, CGLootInfo::LootButtonItemStatsCallback, 00589460, 004fa120, 0.50
 FUN_0054d280, IModelTestRay, 0054d280, 00433350, 0.50
+FUN_006e2e90, OnPlayerEvent, 006e2e90, 005ddc20, 0.50
 FUN_00451e20, RestoreFog, 00451e20, 0042faf0, 0.50
 FUN_0062f420, IReadCameraTarget, 0062f420, 007950c0, 0.50
 FUN_00634950, _D3DXGetTargetDescByName@12, 00634950, 006f1fa2, 0.50
 FUN_008a3810, _D3DXAssembleShader@28, 008a3810, 006f11c8, 0.50
-FUN_006e2e90, OnPlayerEvent, 006e2e90, 005ddc20, 0.50
 FUN_0085ba50, @luaH_get@8, 0085ba50, 006de950, 0.50
 FUN_0067a0f0, DBCache<class_ItemStats_C,int,class_HASHKEY_INT>::CancelCallback, 0067a0f0, 0056a530, 0.50
 FUN_007e70d0, WorldTextInitialize, 007e70d0, 006b5b40, 0.50

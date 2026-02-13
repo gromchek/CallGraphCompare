@@ -167,9 +167,6 @@
 - 00735820 CAnimKitManager::ExpressSegmentBoneSetInst
 - 00748620 CAnimKitManager::MirrorToModel
 
-[CBackdropGenerator]
-- 004a25f0 CBackdropGenerator::SetVertexColor
-
 [CCameraManager]
 - 00422140 CCameraManager::CCameraManager
 
@@ -187,6 +184,7 @@
 - 004ed6d0 CCharacterComponent::ItemsLoaded
 - 004ee0d0 CCharacterComponent::PrepSections
 - 004efab0 CCharacterComponent::ComputeLoadProgress
+- 007202c0 CCharacterComponent::RemoveItemBySlot
 
 [CCharacterCreation]
 - 004e13a0 CCharacterCreation::InitCharacterComponents
@@ -223,32 +221,23 @@
 - 00717ba0 CEffect::AddLootEffect
 
 [CEzLcd]
-- 008480b0 CEzLcd::SetText
-- 00848100 CEzLcd::HideGlobals
+- 00848030 CEzLcd::IsConnected
 - 00958e30 CEzLcd::IsDeviceAvailable
-- 00958e70 CEzLcd::ModifyDisplay
 - 00958fb0 CEzLcd::SetOrigin
-- 00958fe0 CEzLcd::SetVisible
 - 00959110 CEzLcd::Update
 - 00959200 CEzLcd::ShowSubscreen
-- 00959240 CEzLcd::IsConnected
-- 009592f0 CEzLcd::Initialize
 - 009594a0 CEzLcd::SetBackground
 - 00959540 CEzLcd::ShowPage
 - 00959610 CEzLcd::AddNewPage
 - 00959680 CEzLcd::AddText
-- 009597b0 CEzLcd::GetGlobalPage
-- 009598b0 CEzLcd::ModifyControlsOnPage
+- 00959890 CEzLcd::HideGlobals
 
 [CFramePoint]
 - 0049c830 CFramePoint::GetRelativeRect
 - 004d4820 CFramePoint::MarkUnused
 
 [CGAchievementInfo]
-- 005b1fa0 CGAchievementInfo::SaveTrackedAchievements
 - 005b2380 CGAchievementInfo::GetAchievement
-- 005b2ab0 CGAchievementInfo::UpdateInspectAchievement
-- 005b3840 CGAchievementInfo::LoadTrackedAchievements
 
 [CGActionBar]
 - 005a7a40 CGActionBar::PickupActionInternal
@@ -260,11 +249,9 @@
 [CGAutoCompleteName]
 - 0057aca0 CGAutoCompleteName::NodeMatchesParams
 - 0057af10 CGAutoCompleteName::FindNodeByName
-- 0057af80 CGAutoCompleteName::SetName
 - 0057b000 CGAutoCompleteName::RemoveFlags
 - 0057b040 CGAutoCompleteName::RemoveFlags
 - 0057b080 CGAutoCompleteName::RemoveFlagsByName
-- 0057b5e0 CGAutoCompleteName::RefreshName
 - 0057b7c0 CGAutoCompleteName::AddFlags
 
 [CGBag_C]
@@ -311,11 +298,6 @@
 
 [CGClassTrainer]
 - 00568340 CGClassTrainer::ShutdownGame
-
-[CGCommentator]
-- 00568420 CGCommentator::OnSkirmishPlayersModeState
-- 0056b1e0 CGCommentator::GetArenaMember
-- 0056bb70 CGCommentator::OnSkirmishPlayersInQueue
 
 [CGCurrencyTypes]
 - 0051a2b0 CGCurrencyTypes::HasEnough
@@ -425,12 +407,8 @@
 [CGGlyphInfo]
 - 00509720 CGGlyphInfo::SetNameFilter
 
-[CGGuildBankInfo]
-- 005a4ab0 CGGuildBankInfo::OnGuildBankMoneyWithdrawn
-
 [CGGuildInfo]
 - 0049b470 CGGuildInfo::ClientGuildInviteHandler
-- 005ca870 CGGuildInfo::SetShowOffline
 - 005ca8b0 CGGuildInfo::UpdateProfessions
 - 005caa40 CGGuildInfo::QueryPermissions
 - 006b3d10 CGGuildInfo::ClientGuildRosterHandler
@@ -459,49 +437,14 @@
 - 0070b120 CGItem_C::~CGItem_C
 
 [CGLCD]
-- 00847ea0 CGLCD::GetScreenFromName
-- 00848070 CGLCD::LeaveWorld
-- 008481f0 CGLCD::Logout
-- 00848380 CGLCD::HideBattlefieldAlert
-- 008483c0 CGLCD::OnBattlefieldReady
-- 00848490 CGLCD::EnterWorld
-- 008484d0 CGLCD::CheckInput
 - 00848b50 CGLCD::GetHandle
-- 00848b70 CGLCD::Login
-- 00848d50 CGLCD::UpdateMapPositions
-- 00849310 CGLCD::SetStat
-- 00849430 CGLCD::SetStat
-- 00849520 CGLCD::SetStat
-- 008495e0 CGLCD::SetStat
-- 00849700 CGLCD::DisplayMeleeStats
-- 00849960 CGLCD::DisplayRangedStats
-- 00849be0 CGLCD::DisplayDefenseStats
-- 00849d10 CGLCD::DisplaySpellStats
-- 00849f20 CGLCD::SetAlertText
-- 0084a2e0 CGLCD::UpdateBattlefieldStats
-- 0084a450 CGLCD::PushAlert
-- 0084a530 CGLCD::OnWhisper
-- 0084a6e0 CGLCD::OnBattlefieldActive
-- 0084a790 CGLCD::PostInit
-- 0084a940 CGLCD::Update
-- 0084ae50 CGLCD::Shutdown
-- 0084aed0 CGLCD::Initialize
-- 0084b410 CGLCD::LoadLCDMap
-- 0084c100 CGLCD::LoadLCDText
-- 0084c660 CGLCD::LoadLCDBitmap
-- 0084cc00 CGLCD::LoadLCDElement
-- 0084ccf0 CGLCD::GeneratePOIs
-- 0084cff0 CGLCD::LoadScreen
-- 0084d1a0 CGLCD::LoadLayout
 
 [CGLFGuildInfo]
 - 0053f1f0 CGLFGuildInfo::InitializeGame
 
 [CGLookingForGroup]
-- 00559b10 CGLookingForGroup::ParseBlackList
 - 00559da0 CGLookingForGroup::UpdateBestRandomSlot
 - 0055aaf0 CGLookingForGroup::UpdateAvailableRandomSlots
-- 0055b080 CGLookingForGroup::ParsePartyInfo
 
 [CGLootInfo]
 - 00589460 CGLootInfo::LootButtonItemStatsCallback
@@ -517,45 +460,27 @@
 - 00703cd0 CGObject_C::PostShutdown
 - 00743580 CGObject_C::EffectDecayHandler
 - 007435a0 CGObject_C::LoopEffectHandler
-- 00743730 CGObject_C::SetModel
-- 00743b40 CGObject_C::ClearSpellEffect
 - 007446c0 CGObject_C::GetModelPosition
 - 00744720 CGObject_C::GetModelMatrix
 - 00744870 CGObject_C::EffectOnceHandler
 - 00744920 CGObject_C::AuraEffectHoldHandler
 - 007449c0 CGObject_C::AuraEffectHandler
 
-[CGPartyInfo]
-- 0052ca00 CGPartyInfo::GetPartyAssignments
-
 [CGPetInfo]
-- 005d3140 CGPetInfo::OnPetRenameable
-- 005d5e10 CGPetInfo::SetSpellAutocast
 - 005d6020 CGPetInfo::SetAutocast
-
-[CGPetitionInfo]
-- 005cf710 CGPetitionInfo::AddSignature
 
 [CGPlayer_C]
 - 00584080 CGPlayer_C::XBuyItem
-- 006ced80 CGPlayer_C::OnLootItemNotify
-- 006ceec0 CGPlayer_C::SaveBindPoint
 - 006d0460 CGPlayer_C::OnQuestGiverSendQuest
 - 006d2840 CGPlayer_C::TabardDrawCallback
 - 006d4ad0 CGPlayer_C::UpdateAttackPosition
-- 006d6ba0 CGPlayer_C::UpdateObjComponentVisuals
-- 006d6c10 CGPlayer_C::UpdateObjComponentVisualsSlot
-- 006d71e0 CGPlayer_C::GetAutoRangedCombatSpell
 - 006d73b0 CGPlayer_C::UpdateXRayVision
 - 006d7de0 CGPlayer_C::CheckForQuestItemLoot
-- 006dca00 CGPlayer_C::CanTrack
 - 006dd680 CGPlayer_C::TurnInGuildCharter
-- 006de1c0 CGPlayer_C::CanSaveTabardNow
 - 006deb30 CGPlayer_C::UpdateActiveMoverDisplay
-- 006e22c0 CGPlayer_C::RemoveEquipBypassSkill
 
 [CGQuestInfo]
-- 0058c790 CGQuestInfo::ProcessFactionRewardAdjust
+- 0058d050 CGQuestInfo::ProcessFactionRewards
 
 [CGQuestLog]
 - 0058bcb0 CGQuestLog::IsQuestComplete
@@ -564,16 +489,8 @@
 - 005e3b90 CGQuestLog::GetQuestDistSqr
 - 007fe8d0 CGQuestLog::GetQuestGreenRange
 
-[CGRaidInfo]
-- 005725c0 CGRaidInfo::OnPlayerSquelched
-- 00572610 CGRaidInfo::OnEchoSquelch
-- 00572950 CGRaidInfo::GetPartyAssignments
-
 [CGReforge]
 - 0059ab20 CGReforge::SetItem
-
-[CGReputationInfo]
-- 00718b30 CGReputationInfo::IsAtWar
 
 [CGResearchFrame]
 - 0052fe90 CGResearchFrame::EnterWorld
@@ -586,7 +503,6 @@
 
 [CGSpellBook]
 - 0053b540 CGSpellBook::GetSpellProgressionRank
-- 0053bd70 CGSpellBook::IsAuraCaster
 - 0053bdf0 CGSpellBook::FindRaidDispel
 - 0053d580 CGSpellBook::CanShowAura
 - 0053d680 CGSpellBook::CanStealAura
@@ -640,96 +556,57 @@
 - 006fdfb0 CGUnit_C::RenderMissileTrajectoryTargetingTexture
 - 00711f20 CGUnit_C::RenderAutoTrackCursor
 - 00715cf0 CGUnit_C::GetTrackingTurn
-- 00716f10 CGUnit_C::RequestMirrorImageDataFromServer
 - 00717310 CGUnit_C::InitWheels
 - 007173f0 CGUnit_C::GetCurrentAnimationInfo
-- 00717910 CGUnit_C::SetMountModel
 - 00717c20 CGUnit_C::RemoveLootEffect
-- 00717fc0 CGUnit_C::BuildSmoothPosition
-- 007193f0 CGUnit_C::MountTransitionSetCharacterTransform
-- 007197d0 CGUnit_C::UpdateWorldTransform
 - 00719950 CGUnit_C::GetUnitTitle
-- 00719a90 CGUnit_C::GetSwimMatrix
-- 00719b80 CGUnit_C::ComputeSmoothedSwimMatrix
 - 0071a260 CGUnit_C::SetEmoteQueue
-- 0071a540 CGUnit_C::GetDisplayClassGender
 - 0071a7f0 CGUnit_C::HasAttachmentForEffect
 - 0071a860 CGUnit_C::GetAttachmentPositionForEffect
 - 0071ab80 CGUnit_C::UpdateAlphaEffectAlpha
-- 0071b1e0 CGUnit_C::HandlePendingTrackEvents
 - 0071b810 CGUnit_C::GetCanFly
 - 0071bce0 CGUnit_C::IsFacingUnit
 - 0071cba0 CGUnit_C::CreateRipple
-- 0071e5b0 CGUnit_C::UpdateObjectEffectAnimationStates
-- 0071f210 CGUnit_C::SendSplineDone
 - 0071f560 CGUnit_C::IsMountSelf
-- 0071f770 CGUnit_C::UnitReaction
 - 0071fbf0 CGUnit_C::HandleMountTransition
-- 00720220 CGUnit_C::HandleBloodPool
 - 007207c0 CGUnit_C::SetEmoteQueue
 - 00720bf0 CGUnit_C::OverrideMissileFirePos
 - 00721290 CGUnit_C::UpdateSwimmingStatusFlightStyle
-- 00721cf0 CGUnit_C::PreemptivelyCancelShapeshift
 - 00721f90 CGUnit_C::IsAutoTracking
 - 00722d80 CGUnit_C::DoPowerRegen
-- 00723050 CGUnit_C::CanBeSpellClickedByLocalPlayer
 - 00723270 CGUnit_C::DelAttacker
-- 00724f50 CGUnit_C::SaveChainSpellTargets
-- 00726280 CGUnit_C::ApplyUIChannelRemaining
-- 00727a70 CGUnit_C::AuraVisionUpdated
 - 00727c00 CGUnit_C::InsertSortedAura
 - 007282a0 CGUnit_C::HasAura
 - 007283a0 CGUnit_C::HasAuraMatchingSpellClass
-- 0072a000 CGUnit_C::GetUnitName
 - 0072aaf0 CGUnit_C::HasIgnoreAuraState
 - 0072bc70 CGUnit_C::UpdateChannelEffects
 - 0072c510 CGUnit_C::SortAuras
 - 0072c9b0 CGUnit_C::GetSortedAuraSlot
-- 0072cca0 CGUnit_C::ExecuteClientControlUpdate
 - 0072d470 CGUnit_C::OnPitchToAngleLocal
 - 0072e240 CGUnit_C::ReleaseMissiles
 - 0072ed40 CGUnit_C::TrackingSetPitch
-- 0072ee20 CGUnit_C::OnClickAutomoveAndAttack
 - 0072f1f0 CGUnit_C::HandleTrackingPitch
-- 00730290 CGUnit_C::OnReceiveMirrorImageDataFromServer
 - 00730d10 CGUnit_C::UpdateSwimmingStatus
-- 00731600 CGUnit_C::TrackingSetTurn
-- 00731650 CGUnit_C::HandleTrackingFacing
-- 007317a0 CGUnit_C::HandleTracking
 - 00732100 CGUnit_C::CreateItemModel
 - 00732ff0 CGUnit_C::CreateMissile
 - 00735cc0 CGUnit_C::IsOwnedByLocalPlayer
 - 00735ef0 CGUnit_C::UpdatePassengerSmoothFacing
 - 0073a520 CGUnit_C::OnChannelObjectChanged
 - 0073a890 CGUnit_C::UpdateFlightStatus
-- 0073ab90 CGUnit_C::PlayEmoteAnim
 - 0073adc0 CGUnit_C::ProcessEmoteQueue
 - 0073b050 CGUnit_C::PlayParryAnim
 - 0073bbd0 CGUnit_C::AnimEndHandler
-- 0073c1d0 CGUnit_C::OnSpellEffectClear
 - 0073c330 CGUnit_C::OnFlagChanged
 - 0073c5d0 CGUnit_C::OnFlag2Changed
 - 0073e410 CGUnit_C::UpdateDisplayInfoFinish
-- 0073eb50 CGUnit_C::OnChannelSpellChanged
-- 0073ed10 CGUnit_C::MoveEventHappened
 - 00740570 CGUnit_C::OnDynamicFlagsChanged
-- 00740ba0 CGUnit_C::OnSplineMoveEvent
-- 00741210 CGUnit_C::UpdateChainSpellTargets
 - 00741d00 CGUnit_C::Shutdown
 - 00742220 CGUnit_C::Initialize
 - 007462e0 CGUnit_C::PlayFidgetSound
 - 00746bd0 CGUnit_C::GetAttachmentPosition
 - 007471a0 CGUnit_C::HandlePlayStandSound
-- 0074b840 CGUnit_C::VehiclePassengerIsTransitionAllowed
 - 0074b900 CGUnit_C::IsVehiclePreventingTurning
-- 0074bcb0 CGUnit_C::VehiclePassengerShouldWaitForVehicleTransitionAnim
-- 0074c0e0 CGUnit_C::VehiclePassengerUpdateWorldCameraState
-- 0074c4a0 CGUnit_C::VehiclePassengerUpdateWorldCameraStateInstantly
-- 0074c750 CGUnit_C::CreateVehicleData
-- 0074c7b0 CGUnit_C::DestroyVehicleData
-- 0074c7f0 CGUnit_C::VehiclePassengerRequestExit
 - 0074cdf0 CGUnit_C::CreateVehicleCamera
-- 0074cf30 CGUnit_C::VehiclePassengerOnUpdateTransport
 - 0074d070 CGUnit_C::VehiclePassengerInit
 - 00755850 CGUnit_C::PlayCombatSpellMissEffects
 - 00756040 CGUnit_C::PlayRangedItemPull
@@ -757,7 +634,7 @@
 [CGlueMgr]
 - 004d7cd0 CGlueMgr::LogConnectionStatus
 - 004d9660 CGlueMgr::PollEnterWorld
-- 0081c750 CGlueMgr::Shutdown
+- 004da360 CGlueMgr::Idle
 
 [CGxDevice]
 - 00685040 CGxDevice::GetSurveyModeInfo
@@ -795,9 +672,8 @@
 [CKBSetup]
 - 00551050 CKBSetup::GetCategory
 
-[CLCDConnection]
-- 00499fb0 CLCDConnection::ColorOutput
-- 0095a4a0 CLCDConnection::MonoOutput
+[CKBSystem]
+- 005515f0 CKBSystem::Shutdown
 
 [CLCDUtils]
 - 0084af40 CLCDUtils::CreateBitmapFromBLPTex
@@ -841,9 +717,6 @@
 - 005599f0 CMap::LoadTextureBlob
 - 007d5610 CMap::TestQueryRender
 - 009ab070 CMap::RenderFlightBounds
-
-[CMapChunk]
-- 007c3db0 CMapChunk::SelectLights
 
 [CMapObj]
 - 007abac0 CMapObj::RenderMapObjGroupsColor
@@ -1037,12 +910,6 @@
 
 [CSplineParticleEmitter]
 - 00981d40 CSplineParticleEmitter::CreateParticle
-
-[CStatus]
-- 0047c0f0 CStatus::IsEmpty
-- 0047c1d0 CStatus::GetErrorStrLen
-- 0047c240 CStatus::GetErrorStrAlloc
-- 0047c500 CStatus::~CStatus
 
 [CTexture]
 - 004b8770 CTexture::CTexture
@@ -1904,7 +1771,7 @@
 - 00428310 __jump_table::_AddAtomic
 - 00429070 __jump_table::_gmtime_r
 - 0043a270 __jump_table::__ZN9__gnu_cxx18__exchange_and_addEPVii
-- 0047bba0 __jump_table::_objc_msgSend
+- 0047bba0 __jump_table::__ZNK12TSFixedArrayI11CHATMESSAGEE9MemLineNoEv
 - 004bc410 __jump_table::__ZN11TSHashTableI9LCDHANDLE17HASHKEY_CONSTSTRIE3PtrEPKc
 - 004c1590 __jump_table::_fmodf
 - 004d8520 __jump_table::__Z12SysMsgPrintf11SYSMSG_TYPEPKcz
@@ -1939,7 +1806,7 @@
 - 0088d9b0 __jump_table::_atan2f
 - 0088e39c __jump_table::_mktime
 - 008a096a __jump_table::_connect
-- 00958eb0 __jump_table::__ZNK12TSFixedArrayI11CHATMESSAGEE9MemLineNoEv
+- 00959240 __jump_table::_objc_msgSend
 
 [linkObject]
 - 005512b0 linkObject::parse
@@ -2022,29 +1889,17 @@
 - 00490680 FontFaceGetFace
 - 00499d50 FrameXML_ReleaseHashNode
 - 0049cab0 _lua_settop
-- 0049d480 CScriptRegion_SetWidth
-- 0049d620 CScriptRegion_SetHeight
-- 0049d7a0 CScriptRegion_SetSize
 - 0049d950 CScriptRegion_GetPoint
-- 0049db10 CScriptRegion_SetPoint
-- 0049de40 CScriptRegion_SetAllPoints
 - 0049e010 CScriptRegion_ClearAllPoints
-- 004a3790 CSimpleFont_SetFontObject
 - 004a38f0 CSimpleFont_GetFontObject
-- 004a3940 CSimpleFont_CopyFontObject
-- 004a3a50 CSimpleFont_SetFont
 - 004a3b60 CSimpleFont_GetFont
-- 004a3f90 CSimpleFont_SetSpacing
 - 004a4040 CSimpleFont_GetSpacing
 - 004a40e0 CSimpleFont_GetIndentedWordWrap
-- 004a4930 CSimpleFont_SetJustifyH
-- 004a49c0 CSimpleFont_SetJustifyV
 - 004a8570 MovieRecordingGetPath
 - 004a8b60 ILayerDestroy
 - 004a8b80 ILayerInitialize
 - 004a8e00 IStockInitialize
 - 004b4f60 SysMsgAdd
-- 004b4f90 SysMsgAdd
 - 004b5430 TextureSetUserData
 - 004b5460 TextureOnAtlas
 - 004b5490 TextureGetAtlasOffsetAndScale
@@ -2085,7 +1940,6 @@
 - 00564c90 UIMacrosRegisterScriptFunctions
 - 0056d730 MailInfoRegisterScriptFunctions
 - 00572d10 RaidInfoRegisterScriptFunctions
-- 00576cd0 GenderConditional
 - 00577260 EnchantmentParserParseText
 - 00579ba0 OsSetArgs
 - 0057adb0 AutoCompleteRegisterScriptFunctions
@@ -2215,11 +2069,7 @@
 - 0076e0b0 GetRussianNameDeclensions
 - 0076e390 IsRussianDeclensionValid
 - 0076e5d0 _SMemIsValidPointer
-- 0076ec80 SStrSortUTF8I
 - 0076eda0 SStrCopyUTF8
-- 0076eee0 SStrLenUTF8
-- 0076ef30 SStrAdvanceCharsUTF8
-- 0076f190 SStrToUnsigned
 - 0076f420 bjhash
 - 00770ca0 _SSignatureVerifyStream_ProvideData
 - 00770d50 _SSignatureVerifyStream_Begin
@@ -2253,6 +2103,7 @@
 - 007e0a50 GetDeclinedWord
 - 007e0ec0 ValidateStringIsUTF8
 - 007e1130 ToUpper
+- 007e1180 ToLower
 - 007e1e90 ValidateCharacterNameConst
 - 007e1f00 ValidatePetName
 - 007e1f60 ValidateGuildName
@@ -2298,7 +2149,6 @@
 - 007fbe90 SpellVisualsInitializeModelAttachLookup
 - 007fc5a0 SpellVisualsInitialize
 - 007fcbc0 SpellVisualsShutdown
-- 007fd790 Spell_C_GetCursorWorldObject
 - 007fdb50 Spell_C_ModifySpellValue
 - 007fdba0 Spell_C_ModifySpellValue
 - 007fe1b0 SpellFaction
@@ -2306,37 +2156,23 @@
 - 007fe820 SpellGetEffect
 - 007fe850 Spell_C_SpellHasShapeshiftMask
 - 007fef60 Spell_C_ModifyCategoryRecovery
-- 007ff070 Spell_C_GetSpellLevel
 - 007ff180 Spell_C_GetCastTime
-- 007ffea0 Spell_C_CanTargetCorpse
 - 00803500 Spell_C_IsValidTarget
-- 00803ee0 Spell_C_HandleTerrainRay
 - 00804590 Spell_C_CancelsStun
 - 00804720 Spell_C_PetSpellFailedUpdateCooldowns
 - 00804b20 Spell_C_AddToInTransitList
 - 008061a0 Spell_C_GetCastingSpellCast
 - 00806620 Spell_C_CancelCastingSpellByMovement
 - 00807f10 Spell_C_CooldownEventTriggered
-- 00808200 Spell_C_SpellFailed
-- 0080df10 Spell_C_AddPeriodicClientTrigger
 - 00810320 SpellTableMatchRaceClass
 - 008104a0 SpellTableGetSkillLineLinkInfo
 - 00810920 WeaponTrailsShutdown
-- 00812660 Create_SimpleEditBox
-- 00812690 Create_SimpleMessageFrame
-- 008126c0 Create_SimpleModel
-- 00812720 Create_SimpleScrollingMessageFrame
-- 00812780 Create_SimpleHTML
-- 008127b0 Create_SimpleStatusBar
-- 00812870 Create_SimpleButton
-- 008128a0 Create_SimpleFrame
 - 00812ce0 FrameXML_AcquireHashNode
 - 00813be0 FrameXML_StoreHashNode
 - 008145d0 handle_body
 - 00814b50 begin_element
 - 00814e40 StringToFrameStrata
 - 00815160 OrientationToString
-- 008154e0 StringToBOOL
 - 00815500 StringToBOOL
 - 00815fa0 LoadXML_String
 - 00816de0 Script_issecurevariable

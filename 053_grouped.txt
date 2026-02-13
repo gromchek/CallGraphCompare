@@ -68,7 +68,6 @@
 
 [CGUnit_C]
 - 006fdfb0 CGUnit_C::RenderDebugPathing
-- 0072a000 CGUnit_C::GetUnitName
 - 00742220 CGUnit_C::Initialize
 - 0074dcb0 CGUnit_C::GetSelectionHighlightColor
 
@@ -134,11 +133,6 @@
 - 00496170 CSimpleTop::~CSimpleTop
 - 00496360 CSimpleTop::`vector_deleting_destructor'
 
-[CStatus]
-- 0047c1d0 CStatus::GetErrorStrLen
-- 0047c240 CStatus::GetErrorStrAlloc
-- 0047c500 CStatus::~CStatus
-
 [CTexture]
 - 004b8770 CTexture::CTexture
 
@@ -184,7 +178,6 @@
 [FriendList]
 - 0054b1c0 FriendList::HandleStatus
 - 006fad80 FriendList::AddFriends
-- 0084c660 FriendList::SendWho
 
 [ItemStats_C]
 - 0098d910 ItemStats_C::Unpack
@@ -342,7 +335,6 @@
 - 004a8d00 ScrnPaint
 - 004a8d20 ScrnInitialize
 - 004a8e00 IStockInitialize
-- 004b4f90 SysMsgAdd
 - 004b5170 FileError
 - 004b5bb0 RequestImageDimensions
 - 004b5e80 UpdateBlpTextureAsync
@@ -521,6 +513,7 @@
 - 0070c050 ValidateName
 - 0070c880 Script_CloseItemText
 - 00718ca0 @FT_MulDiv@12
+- 0072cf70 PetNameChangeHandler
 - 00732100 LogThreads
 - 0073f590 OnMonsterMoveEvent
 - 0074e050 ParseCommand
@@ -612,7 +605,6 @@
 - 007fea80 SpellMissingItemCallback
 - 007fecc0 Spell_C_CancelSpell
 - 00806dd0 SpellStart
-- 00808200 Spell_C_SpellFailed
 - 00809af0 CastResultHandler
 - 0080abe0 ItemCheckCooldownCallback
 - 0080ac90 SendCast
@@ -621,7 +613,6 @@
 - 0080fee0 SpellStartHandler
 - 00813be0 FrameXML_StoreHashNode
 - 00814f60 StringToDrawLayer
-- 008154e0 StringToBOOL
 - 00815500 @lua_isstring@8
 - 00815600 LoadXML_Value
 - 00815740 LoadXML_Dimensions
@@ -633,8 +624,6 @@
 - 00821930 GetRealmsEventHandler
 - 00826a60 @lua_pushcclosure@12
 - 00835df0 __aulldiv
-- 0084a450 HashNewModel
-- 0084aed0 ProfileCreate
 - 0084af40 BuildSimpleGeoset
 - 0084d480 @luaO_str2d@8
 - 0084d580 @luaO_pushvfstring@12
