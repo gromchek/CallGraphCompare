@@ -23,9 +23,6 @@
 [CGGameObject_C]
 - 00514080 CGGameObject_C::ObjectReaction
 
-[CGGameObject_C_TypeBase]
-- 007116c0 CGGameObject_C_TypeBase::Use
-
 [CGGameUI]
 - 00707960 CGGameUI::DeleteCursorItem
 
@@ -99,23 +96,13 @@
 [CSimpleCheckbox]
 - 009624c0 CSimpleCheckbox::LoadXML
 
-[CSimpleEditBox]
-- 00965700 CSimpleEditBox::CreateCandidatesFrame
-- 00966140 CSimpleEditBox::PopulateCandidates
-- 00966710 CSimpleEditBox::UpdateVisibleText
-
 [CSimpleFontString]
-- 00482450 CSimpleFontString::WrapText
 - 004836d0 CSimpleFontString::PostLoadXML
 - 00483890 CSimpleFontString::SetTextHeight
 - 00486e30 CSimpleFontString::OnFrameSizeChanged
 
 [CSimpleFrame]
-- 0048f1f0 CSimpleFrame::LoadXML_Layers
 - 00492770 CSimpleFrame::~CSimpleFrame
-
-[CSimpleHyperlinkButton]
-- 00978760 CSimpleHyperlinkButton::SetHyperlink
 
 [CSimpleMessageFrameLineNode]
 - 00969720 CSimpleMessageFrameLineNode::CSimpleMessageFrameLineNode
@@ -233,10 +220,6 @@
 - 00774ca0 SRWLock::SUNNLockEnter
 - 00774da0 SRWLock::SURWLockEnter
 
-[SSyncObject]
-- 007748e0 SSyncObject::~SSyncObject
-- 00921a00 SSyncObject::SSyncObject
-
 [Sound]
 - 0087c710 Sound::Initialize
 
@@ -257,6 +240,7 @@
 
 [WowConnectionNet]
 - 004694c0 WowConnectionNet::~WowConnectionNet
+- 007747a0 WowConnectionNet::PlatformWorkerReady
 
 [XMLNode]
 - 005f4b00 XMLNode::XMLNode
@@ -308,8 +292,7 @@
 - 00451e20 RestoreFog
 - 00456a00 @SSignatureVerifyStream_Finish@12
 - 0045a6f0 _SMemHeapGetDetails@8
-- 0047c090 GetGlobalStatusObj
-- 0047cc10 PropGetSelectedContext
+- 00469300 WorkerProc
 - 0047cc70 PropCreateContext
 - 0047cc90 operator_delete
 - 0047d0d0 EventGetCurrentContext
@@ -346,7 +329,6 @@
 - 004b9480 GetTexture
 - 004b95b0 CreateTgaTexture
 - 004ba980 IPerfRemoteLoggingStartup
-- 004be040 TextBlockWrapText
 - 004c9bf0 SndInterfaceWorldDestroy
 - 004cfb80 SysMsgSetCallback
 - 004d0a70 $E75
@@ -429,9 +411,7 @@
 - 005fd630 ValidateIsInRange
 - 005fe2c0 CameraRegisterScriptFunctions
 - 005fe2f0 CameraUnregisterScriptFunctions
-- 00608880 ScriptEventsInitialize
 - 0060c260 UnitUpdateHandler
-- 00616920 CursorResetCursor
 - 006176a0 GetAlphaMask
 - 0061936e SetPortraitTexture
 - 0061dce0 TooltipObjectLockItemStatsCallback
@@ -451,8 +431,6 @@
 - 0062f420 IReadCameraTarget
 - 0062fc20 CGTooltip_SetBagItem
 - 006301a0 CGTooltip_SetCraftItem
-- 00634910 ClientDBStringLookup
-- 00634950 _D3DXGetTargetDescByName@12
 - 006349f0 @FT_Read_Stream_At@16
 - 00635680 InitializeHandlerPlayer
 - 00635b40 DBCache_RegisterHandlers
@@ -463,11 +441,6 @@
 - 006a2660 RemoveGlContext
 - 006a2a50 AttachGlContext
 - 006ab6c0 CalcLevelOffset
-- 006b32c0 ReverseWhoisResponseHandler
-- 006b5030 PrintWho
-- 006b8720 OnWhoList
-- 006bd900 GxuFontGetWrappedTextHeight
-- 006bde80 GxuFontCreateFont
 - 006bdf90 GxuFontDestroyFont
 - 006be230 GxuFontInitialize
 - 006c5120 LoadRibbonMaterial
@@ -500,7 +473,6 @@
 - 006e2e90 OnPlayerEvent
 - 006e4fd0 OnUpdateStackCount
 - 006e7840 OnSupercededSpell
-- 006ec2c0 MovementInitialize
 - 00703c30 Trade_C_UseCursorItem
 - 00703c50 Trade_C_GetProposedEnchantment
 - 00703cb0 Trade_C_GetPlayerTradeGold
@@ -531,8 +503,6 @@
 - 00766320 s_CreatePathDirectories
 - 007681f0 SetCommandHandler
 - 00768420 ConsoleCommand_Ver
-- 00768660 ConsoleCommand_Help
-- 0076b2a0 AddLineToExecFile
 - 0076b3b0 AddToHistory
 - 0076e470 StormRtlDestroy
 - 0076e4e0 FatalError
@@ -582,23 +552,15 @@
 - 0077e670 LogMachineState
 - 0077e9a0 SServerInitialize
 - 0078fc40 TransformAABox
-- 007e1f60 ValidateGuildName
 - 007e2730 UpdateTime
 - 007e2a50 ReceiveServerTime
-- 007e2bd0 ClientInitializeGameTime
 - 007e3a20 ConsoleCommand_ShadowLOD
-- 007e4a40 ShadowInit
 - 007e70d0 WorldTextInitialize
-- 007e7bb0 TaxiMapInitialize
 - 007eae60 GuildGetTabardCost
 - 007ece40 ConsoleCommand_SkySunGlare
 - 007edbe0 _SUniConvertUTF16to8@24
-- 007f3a10 ViolenceLevelsInitialize
-- 007f3f40 MinimapGetPartyMembers
 - 007f5070 SetupQuad
-- 007f5240 BuildPathName
 - 007f5760 SetupTextureHandles
-- 007f5930 MinimapUpdatePosition
 - 007f6540 LoadMD5Names
 - 007fcca0 GetStringReason
 - 007fdb50 Spell_C_GetMinMaxPoints
@@ -624,7 +586,6 @@
 - 00821930 GetRealmsEventHandler
 - 00826a60 @lua_pushcclosure@12
 - 00835df0 __aulldiv
-- 0084af40 BuildSimpleGeoset
 - 0084d480 @luaO_str2d@8
 - 0084d580 @luaO_pushvfstring@12
 - 0084dab0 @lua_checkstack@8
