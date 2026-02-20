@@ -8,6 +8,10 @@ run_501() {
     python CmpCallGraph.py 335_call_graph.json 501_call_graph.json -j 14 -o 501.txt --grouped
 }
 
+run_601() {
+    python CmpCallGraph.py 335_call_graph.json 501_call_graph.json -j 14 -o 601.txt --grouped
+}
+
 run_053() {
     python CmpCallGraph.py 335_call_graph.json 053_call_graph.json -j 14 -o 053.txt --grouped
 }
@@ -19,16 +23,20 @@ case "$1" in
     501)
         run_501
         ;;
+    601)
+        run_601
+        ;;
     053)
         run_053
         ;;
     all)
         run_410
         run_501
+		run_601
         run_053
         ;;
     *)
-        echo "Usage: $0 {410|501|053|all}"
+        echo "Usage: $0 {410|501|601|053|all}"
         exit 1
         ;;
 esac

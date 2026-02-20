@@ -9,3 +9,4 @@
 !053_grouped.txt
 normalize_funcs.py
 compare_funcs.py
+*.sym

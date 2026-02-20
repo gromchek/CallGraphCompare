@@ -1,3 +1,7 @@
+## Use the new version on this tool
+
+https://github.com/gromchek/cmpgraph
+
 ## Usage Instructions
 
 Follow these steps to process your data:
