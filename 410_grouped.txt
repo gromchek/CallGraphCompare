@@ -164,6 +164,7 @@
 - 00717260 CAnimKitManager::GetExpressingAnim
 - 00724200 CAnimKitManager::ResetModel
 - 00735820 CAnimKitManager::ExpressSegmentBoneSetInst
+- 0073b510 CAnimKitManager::OnModelSequenceCallback
 - 00748620 CAnimKitManager::MirrorToModel
 
 [CCameraManager]
@@ -305,11 +306,8 @@
 
 [CGGameObject_C_TypeBase]
 - 0070fa70 CGGameObject_C_TypeBase::CheckRange
-- 00711470 CGGameObject_C_TypeBase::CanUseNow
 
 [CGGameObject_C_Type_DestructibleBuilding]
-- 0070b830 CGGameObject_C_Type_DestructibleBuilding::ImpactEffectSequenceFinishedHandler
-- 0070e750 CGGameObject_C_Type_DestructibleBuilding::UpdateDisplay
 - 00710be0 CGGameObject_C_Type_DestructibleBuilding::PostInit
 
 [CGGameObject_C_Type_DungeonDifficulty]
@@ -324,19 +322,15 @@
 - 00512540 CGGameUI::OpenPartyInvite
 - 005128d0 CGGameUI::OnCVarsLoaded
 - 00512a60 CGGameUI::GetPartyMember
-- 00512b00 CGGameUI::UnitNameUpdate
 - 00513bf0 CGGameUI::SetSummonRequest
-- 00519ca0 CGGameUI::GetCurrentSubzoneRec
 - 00524720 CGGameUI::CheckInstanceDifficultyMessages
 - 00524780 CGGameUI::SendRaidDifficultyMessage
-- 0052cbc0 CGGameUI::IsInDynamicDifficultyMap
 
 [CGGlyphInfo]
 - 00509720 CGGlyphInfo::SetNameFilter
 
 [CGGuildInfo]
 - 0049b470 CGGuildInfo::ClientGuildInviteHandler
-- 005ca0f0 CGGuildInfo::UpdateRoster
 - 005ca8b0 CGGuildInfo::UpdateProfessions
 - 005caa40 CGGuildInfo::QueryPermissions
 
@@ -345,18 +339,10 @@
 - 005fa110 CGInputControl::CanSyncFreeLookFacing
 
 [CGInstanceEncounter_C]
-- 005ed740 CGInstanceEncounter_C::GetNumBossSlots
 - 00804c10 CGInstanceEncounter_C::ClearExpiredTimers
-
-[CGItemStatsSummary]
-- 0061ba90 CGItemStatsSummary::Finalize
-- 0061dbc0 CGItemStatsSummary::operator-
-- 0061f550 CGItemStatsSummary::FillOutScalingItem
-- 00630c70 CGItemStatsSummary::CreateFromTooltip
 
 [CGItem_C]
 - 007040b0 CGItem_C::IsBoundForTrade
-- 00706e60 CGItem_C::GetOnUseSlot
 - 00708ac0 CGItem_C::IsBoundToAccount
 - 0070aa40 CGItem_C::PostInitWithStats
 - 0070b120 CGItem_C::~CGItem_C
@@ -379,8 +365,8 @@
 
 [CGObject_C]
 - 004e2e70 CGObject_C::Animate
-- 006ff410 CGObject_C::ClearEffectKit
 - 00703cd0 CGObject_C::PostShutdown
+- 00743390 CGObject_C::IsObjectModelLoaded
 - 007435a0 CGObject_C::LoopEffectHandler
 - 007446c0 CGObject_C::GetModelPosition
 - 00744720 CGObject_C::GetModelMatrix
@@ -440,12 +426,6 @@
 - 00586520 CGTradeInfo::HandleTradeMessage
 - 00586930 CGTradeInfo::PlayerAccept
 
-[CGTradeSkillInfo]
-- 005da5f0 CGTradeSkillInfo::GetSkillLineRec
-
-[CGUIBindings]
-- 0055e2c0 CGUIBindings::KeyEventToString
-
 [CGUIMacros]
 - 00518c80 CGUIMacros::LoadMacros
 - 00566330 CGUIMacros::FindMacro
@@ -463,7 +443,6 @@
 - 006fdfb0 CGUnit_C::RenderMissileTrajectoryTargetingTexture
 - 00711f20 CGUnit_C::RenderAutoTrackCursor
 - 00715cf0 CGUnit_C::GetTrackingTurn
-- 00717310 CGUnit_C::InitWheels
 - 007173f0 CGUnit_C::GetCurrentAnimationInfo
 - 00717c20 CGUnit_C::RemoveLootEffect
 - 00719950 CGUnit_C::GetUnitTitle
@@ -497,7 +476,6 @@
 - 00732ff0 CGUnit_C::CreateMissile
 - 00735cc0 CGUnit_C::IsOwnedByLocalPlayer
 - 00735ef0 CGUnit_C::UpdatePassengerSmoothFacing
-- 0073a520 CGUnit_C::OnChannelObjectChanged
 - 0073a890 CGUnit_C::UpdateFlightStatus
 - 0073adc0 CGUnit_C::ProcessEmoteQueue
 - 0073b050 CGUnit_C::PlayParryAnim
@@ -541,6 +519,7 @@
 - 004d7cd0 CGlueMgr::LogConnectionStatus
 - 004d9660 CGlueMgr::PollEnterWorld
 - 004da360 CGlueMgr::Idle
+- 00717310 CGlueMgr::CharacterEmoteSpellStart
 
 [CGxDevice]
 - 00685040 CGxDevice::GetSurveyModeInfo
@@ -555,12 +534,8 @@
 
 [CGxFont]
 - 006c2270 CGxFont::GetPixelSize
-- 006c22f0 CGxFont::UpdateDimensions
 - 006c24f0 CGxFont::GetGlyphBearing
-- 006c29a0 CGxFont::CheckStringGlyphs
-- 006c3710 CGxFont::ClearGlyphs
 - 006c3b20 CGxFont::~CGxFont
-- 006c3cb0 CGxFont::Initialize
 - 006c3fc0 CGxFont::NewCodeDesc
 
 [CGxStringBatch]
@@ -587,7 +562,6 @@
 [CM2Model]
 - 004f5e80 CM2Model::GetAttachmentPivot
 - 00824d30 CM2Model::FreeExternalResources
-- 00825ee0 CM2Model::HasSequence
 - 00825f40 CM2Model::GetFallbackSequenceIdFromSequenceId
 - 00826e60 CM2Model::SetupBoneSequence
 - 0082b270 CM2Model::FindKey
@@ -617,18 +591,14 @@
 - 00826930 CMapObj::WaitLoad
 
 [CMissile]
-- 006feb20 CMissile::ApplyMotionScriptFunctionRotationAndScale
 - 00700e20 CMissile::HitTargetAreaEffect
 - 00702db0 CMissile::HitTarget
 
 [CMissileCollision]
 - 006fbff0 CMissileCollision::ComputeSegmentImpactTime
-- 006fc4a0 CMissileCollision::ComputeUnitRank
-- 006fca40 CMissileCollision::MaybeAddUnitToSystem
 
 [CMovementShared]
 - 00986ea0 CMovementShared::IsJumpingUp
-- 009870d0 CMovementShared::RelDistanceFallen
 - 0098b9a0 CMovementShared::RemoveFromTransport
 - 0098c940 CMovementShared::ConvertCurrentSplineToLoopingSpline
 
@@ -639,13 +609,9 @@
 - 006eda60 CMovement_C::OnSetFacing
 - 006ee810 CMovement_C::OnSetCollisionHeight
 - 006eea50 CMovement_C::OnSwimStopLocal
-- 0075d1c0 CMovement_C::UseWalkableRedirection
-- 0075e0c0 CMovement_C::CalcRunWalkWalkableObstaclePush
-- 0075e250 CMovement_C::CalcRunWalkBlockingObstaclePush
+- 006ef490 CMovement_C::OnPitchToAngleLocal
 - 0075e9c0 CMovement_C::CalcFallObstaclePush
-- 0075eb00 CMovement_C::GetTimeJustFallen
 - 0075ee60 CMovement_C::CalcAverageSurfaceNormal
-- 0075ff90 CMovement_C::GetMoveFacets
 - 00761b00 CMovement_C::AttemptStepUp
 
 [CObjectEffect]
@@ -792,7 +758,6 @@
 - 0075af00 CVehicleCamera_C::OnPassengerTransitionMotionBegin
 
 [CVehiclePassenger_C]
-- 00747910 CVehiclePassenger_C::DeleteAllDeferredVehicleTransitionAnimSplines
 - 00747d70 CVehiclePassenger_C::StopMirroringVehicleAnims
 - 007487e0 CVehiclePassenger_C::IsCurrentlyMirroringVehicleAnims
 - 007498e0 CVehiclePassenger_C::Init
@@ -889,7 +854,6 @@
 - 0067a8c0 DBCache<PetNameCache,int,HASHKEY_INT>::CancelCallback
 - 0067a940 DBCache<PetNameCache,int,HASHKEY_INT>::Invalidate
 - 0067ea30 DBCache<PetNameCache,int,HASHKEY_INT>::GetRecord
-- 007e08e0 DBCache<PetNameCache,int,HASHKEY_INT>::GetRecordByName
 
 [DBCache<QuestCache,int,HASHKEY_INT>]
 - 0067de90 DBCache<QuestCache,int,HASHKEY_INT>::GetRecord
@@ -1600,7 +1564,6 @@
 
 [unnamed namespace]
 - 004029b0 GetInstallLocationRegKeyName
-- 00402f60 ProfileGetValue
 - 00404930 AcceptArchive
 - 00407900 _SErrSetLastError
 - 00408520 OsGetAsyncTimeMsPrecise
@@ -1660,7 +1623,6 @@
 - 00479340 _BZ2_hbAssignCodes
 - 00479390 _BZ2_hbCreateDecodeTables
 - 0047ac70 _BZ2_blockSort
-- 0047d0d0 EventGetCurrentContext
 - 0047d4c0 EventInputProcess
 - 00481a00 MakeUpperCaseName
 - 00490680 FontFaceGetFace
@@ -1690,7 +1652,6 @@
 - 004cdf70 ClientDBInitialize
 - 004d2230 _OkToQueryLiquidSounds
 - 004d27e0 HeapUsage
-- 004d77e0 ClntObjMgrUnlockObject
 - 004dfd00 CharacterCreateRegisterScriptFunctions
 - 004ea9e0 OsPathFindFilename
 - 004f2e50 TextureCacheGetInfo
@@ -1699,10 +1660,8 @@
 - 004fcef0 ChatRegisterScriptFunctions
 - 0050f630 Script_GetItemUniqueness
 - 005176f0 FindItemInvTypeCallback
-- 00517740 FindItemClassTypeCallback
 - 0052c370 PartyInfoRegisterScriptFunctions
 - 0053b740 SpellBookRegisterScriptFunctions
-- 0053b970 GetActionBarPageOffset
 - 00543650 WorldMapRegisterScriptFunctions
 - 005485b0 WorldStateInfoRegisterScriptFunctions
 - 005485e0 WorldStateInfoUnregisterScriptFunctions
@@ -1752,8 +1711,6 @@
 - 005f79a0 SetAddOnInfoRequest
 - 005f9580 InputControlRegisterScriptFunctions
 - 005fc0f0 Script_DescendStart
-- 005fd2c0 InputControlInitialize
-- 005fd910 CameraRegisterCVars
 - 005fe2c0 CameraRegisterScriptFunctions
 - 0060b420 Script_GetAuraTokenFromGUID
 - 006164b0 CursorUpdate
@@ -1769,24 +1726,17 @@
 - 006c0b20 ScreenToPixelHeight
 - 006c0b60 ScreenToPixelWidth
 - 006c0ba0 SetProjection
-- 006c0e80 ParseEmbeddedTexture
-- 006c1ae0 CalcWrapPoint
+- 006c1d40 CalcWrapPoint
 - 006cf240 CanPlaySpellVisualKit
-- 006dc810 Player_C_GetModelName
+- 006eaba0 MovementNotifyZoneMgr
 - 006f13e0 MovementIdleMoveUnits
 - 006ff320 MovementGetTransportMtxSafe
 - 0071ef20 IsMessageAllowedWhileOnSpline
 - 0071fa90 AreaListZoneHasBreathParticles
-- 0074b320 MovementSetGlobals
-- 0074b330 MovementGetGlobals
 - 0074d0d0 GUIDToString
 - 0074dcb0 GetCombatLogObjectFlags
-- 00750860 UnitCombatLogHeal
 - 00750b60 UnitCombatLogPowerDrain
-- 00751b80 UnitCombatLogSpellMissed
 - 007523d0 UnitCombatLogInterrupt
-- 00752de0 UnitCombatLogSplitDamage
-- 00769d10 ConsoleDeviceHardwareChanged
 - 0076aaf0 RemoveConsoleDeviceDefaultCallback
 - 0076bed0 SpellIsAreaAuraEffect
 - 0076cb60 operator>>
@@ -1812,17 +1762,11 @@
 - 007dc9c0 ProcessComSatEvents
 - 007dca90 AddComSatEvent
 - 007dcb10 AddComSatEvent
-- 007dcb90 OsOutputDebugString
-- 007dcf20 VoiceChatModeHandler
-- 007dcfe0 VoiceActivationSensitivityHandler
-- 007dd060 SelfMuteHandler
 - 007de310 ProcessComSatCallbacks
 - 007df830 DoComSatWork
 - 007df900 ComSatClient_Shutdown
 - 007dfea0 EnableVoiceChatHandler
-- 007e0a50 GetDeclinedWord
 - 007e1130 ToUpper
-- 007e2250 ValidateNameInitialize
 - 007e2c40 ProjectTex2dGetModFadeTex
 - 007e2d60 ProjectTex2dMakeMatrices
 - 007e4370 ProjectTex2d
@@ -1836,13 +1780,11 @@
 - 007f9f10 SpellVisualsGetMountTransitionAlpha
 - 007fa290 GetSpellVisual
 - 007fa2e0 SpellVisualsHandleCastStart
-- 007fbb80 SpellVisualsShutdownModelAttachLookup
 - 007fcbc0 SpellVisualsShutdown
 - 007fdb50 Spell_C_ModifySpellValue
 - 007fdba0 Spell_C_ModifySpellValue
 - 007fe820 SpellGetEffect
 - 007fef60 Spell_C_ModifyCategoryRecovery
-- 007ff180 Spell_C_GetCastTime
 - 00803500 Spell_C_IsValidTarget
 - 00804590 Spell_C_CancelsStun
 - 00804720 Spell_C_PetSpellFailedUpdateCooldowns
@@ -2082,7 +2024,6 @@
 - 00957df0 _FLAC__memory_alloc_aligned_int32_array
 - 009789b0 GxuFontStringHyperLinkInfo
 - 00984670 SpellVisualsCancelMountTransition
-- 00987e30 MovementNotifyZoneMgr
 - 00991320 _FT_New_Library
 - 009a67e0 OsClipboardGetString
 - 009ab8b0 SpellPutCastTargets

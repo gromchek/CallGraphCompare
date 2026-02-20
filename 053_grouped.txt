@@ -17,14 +17,8 @@
 [CGCamera]
 - 0087a210 CGCamera::RunShakes
 
-[CGChat]
-- 006fb700 CGChat::GetPendingChatMessages
-
 [CGGameObject_C]
 - 00514080 CGGameObject_C::ObjectReaction
-
-[CGGameUI]
-- 00707960 CGGameUI::DeleteCursorItem
 
 [CGGuildRegistrar]
 - 00599e90 CGGuildRegistrar::CloseRegistrar
@@ -34,7 +28,6 @@
 - 00707720 CGItem_C::PostInitWithStats
 
 [CGLootInfo]
-- 00589460 CGLootInfo::LootButtonItemStatsCallback
 - 00589920 CGLootInfo::ClearSlot
 
 [CGMerchantInfo]
@@ -46,7 +39,6 @@
 
 [CGPlayer_C]
 - 0051a250 CGPlayer_C::GetProficiency
-- 006d0e10 CGPlayer_C::OnQuestGiverQuestComplete
 - 006d2ea0 CGPlayer_C::XBuyItemInSlot
 - 006d6720 CGPlayer_C::ReportBagItemSubtypeMismatch
 
@@ -226,6 +218,9 @@
 [TEXTLINETEXTURE]
 - 006c4cd0 TEXTLINETEXTURE::~TEXTLINETEXTURE
 
+[TSFixedArray<struct_InitialSpellStruct>]
+- 006cf4a0 TSFixedArray<struct_InitialSpellStruct>::ReallocData
+
 [TSFixedArray<unsigned_int>]
 - 00466910 TSFixedArray<unsigned_int>::ReallocData
 
@@ -248,9 +243,7 @@
 
 [unnamed namespace]
 - 00401280 NotifyHandler
-- 004016a0 DisplayErrorLevelStatus
 - 00401840 PrintFilterMask
-- 004018d0 SetFilterMask
 - 00401a10 ErrorDisplayFilterCallback
 - 00401a30 GammaCallback
 - 00401b60 ClientRegisterConsoleCommands
@@ -295,7 +288,6 @@
 - 00469300 WorkerProc
 - 0047cc70 PropCreateContext
 - 0047cc90 operator_delete
-- 0047d0d0 EventGetCurrentContext
 - 0047e680 IEvtSchedulerCreateContext
 - 0047e8a0 ResetSyncState
 - 0047ea70 DestroySchedulerThread
@@ -334,18 +326,14 @@
 - 004d0a70 $E75
 - 004d2390 Script_CastShapeshiftForm
 - 004d2f90 CCommand_HeapUsage
+- 004d3810 ClntObjMgrGetMovementGlobals
 - 004dfd00 CharCreateRegisterScriptFunctions
 - 004e1e20 SndInterfaceUnregisterVocalScriptFunctions
 - 004f92a0 SmartScreenRectShutdown
 - 004fbb20 StringToChatType
-- 004fbc60 Script_ChatFrameLog
 - 004fcef0 ChatRegisterScriptFunctions
-- 004fe330 ChannelPlayerCommand
-- 004fe460 ChannelCommand
-- 0050b1d0 UnitCombatLogShowXPGained
 - 0050f630 LockLog
 - 00512280 UnloadScriptFunctions
-- 00512b60 ItemPushItemStatsCallback
 - 00513e00 MirrorTimerToName
 - 00517e00 PlacedFrameCallback
 - 00518280 SmartScreenRectGetGridPos
@@ -360,7 +348,6 @@
 - 0055dc90 UIBindingsRegisterScriptFunctions
 - 0055dcc0 UIBindingsUnegisterScriptFunctions
 - 0056d4b0 UpdateTextureDefault
-- 0056d960 FriendListNameCallbackWithSort
 - 00576b50 GetForcedAnimIndex
 - 00579590 QuestParserParseText
 - 00579e50 SpellParserReplaceText
@@ -374,7 +361,6 @@
 - 0058c550 QuestInfoRegisterScriptFunctions
 - 0058c580 QuestInfoUnregisterScriptFunctions
 - 005918e0 $E162
-- 00593db0 GetServiceTypeFromString
 - 00593f70 ClassTrainerRegisterScriptFunctions
 - 00593fa0 ClassTrainerUnregisterScriptFunctions
 - 00598e10 TabardCreationRegisterScriptFunctions
@@ -407,27 +393,17 @@
 - 005ed930 _SBigToBinaryBuffer@16
 - 005f4660 ConsoleCommand_TypeExec
 - 005f4b80 ConsoleCommand_CloseExec
-- 005fd2c0 InputControlInitialize
 - 005fd630 ValidateIsInRange
 - 005fe2c0 CameraRegisterScriptFunctions
 - 005fe2f0 CameraUnregisterScriptFunctions
 - 0060c260 UnitUpdateHandler
-- 006176a0 GetAlphaMask
 - 0061936e SetPortraitTexture
 - 0061dce0 TooltipObjectLockItemStatsCallback
 - 0061dd20 TooltipCorpseNameCallback
-- 0061dd60 TooltipSpellItemStatsCallback
 - 00625940 CGTooltip_SetText
 - 006259e0 CGTooltip_SetSpell
-- 006263e0 CGTooltip_SetCraftSpell
 - 0062e520 CGTooltip_SetLootItem
-- 0062e670 CGTooltip_SetQuestItem
-- 0062e790 CGTooltip_SetQuestLogItem
-- 0062e900 CGTooltip_SetTrainerService
-- 0062eae0 CGTooltip_SetTradeSkillItem
 - 0062ed70 CGTooltip_SetMerchantItem
-- 0062eff0 CGTooltip_SetTradePlayerItem
-- 0062f1e0 CGTooltip_SetTradeTargetItem
 - 0062f420 IReadCameraTarget
 - 0062fc20 CGTooltip_SetBagItem
 - 006301a0 CGTooltip_SetCraftItem
@@ -446,58 +422,33 @@
 - 006c5120 LoadRibbonMaterial
 - 006c58f0 GxuFontShutdown
 - 006cb990 RandomRollNameQueryCallback
-- 006cc440 OnGuildInfo
-- 006ccf10 OnGuildRoster
-- 006cd0e0 CCommand_SetFaction
 - 006cd8c0 QuestRewardItemCallback
-- 006cd940 QuestFailedCallback
-- 006cdeb0 OnProficiency
 - 006ce0c0 OnLearnedSpell
 - 006d7d70 QuestLootQuestQueryCallback
-- 006d7f10 OnQuestGiverEvent
 - 006d8030 OnQuestUpdate
-- 006d8410 OnTrainerEvent
 - 006d84f0 OnGroupCancel
 - 006d8870 OnGroupList
 - 006da4a0 SkillRankChangeHandler
 - 006daa80 SendChatEvent
-- 006db6f0 SwapItemsStatsCallback
-- 006dbbe0 AutoEquipStatsCallback
 - 006dbc60 ResurrectNameQueryCallback
-- 006dbd00 OnResurrectRequest
-- 006dc810 Player_C_GetModelName
-- 006dd360 GuildCharterTurnInCallback
 - 006dd680 RenderGeosetPrep
-- 006deef0 OnNpcPetitionEvent
 - 006df050 OnInitialSpells
-- 006e2e90 OnPlayerEvent
-- 006e4fd0 OnUpdateStackCount
-- 006e7840 OnSupercededSpell
 - 00703c30 Trade_C_UseCursorItem
 - 00703c50 Trade_C_GetProposedEnchantment
 - 00703cb0 Trade_C_GetPlayerTradeGold
 - 00703cc0 Trade_C_GetTargetTradeGold
 - 007076e0 __ftol
-- 00707a30 FrameScriptGetSpellString
 - 0070a850 AddInventoryArtHash
 - 0070be30 PageTextHandler
 - 0070bef0 CustomAnimHandler
 - 0070c050 ValidateName
 - 0070c880 Script_CloseItemText
 - 00718ca0 @FT_MulDiv@12
-- 0072cf70 PetNameChangeHandler
 - 00732100 LogThreads
-- 0073f590 OnMonsterMoveEvent
 - 0074e050 ParseCommand
 - 00752100 _SFileLoadFileEx2@32
 - 00763cb0 ConsoleCommand_RepeatHandler
 - 00764ee0 ConsoleCommand_CharSpacing
-- 00764f30 ConsoleCommand_DefaultSettings
-- 007650a0 ConsoleCommand_FontSize
-- 00765170 ConsoleCommand_Font
-- 00765400 ConsoleCommand_CurrentSettings
-- 007654a0 ConsoleCommand_FontColor
-- 00765670 ConsoleCommand_BufferSize
 - 00765700 NormalBlockHandler
 - 007660d0 UnregisterHandlers
 - 00766320 s_CreatePathDirectories
@@ -552,15 +503,11 @@
 - 0077e670 LogMachineState
 - 0077e9a0 SServerInitialize
 - 0078fc40 TransformAABox
-- 007e2730 UpdateTime
-- 007e2a50 ReceiveServerTime
 - 007e3a20 ConsoleCommand_ShadowLOD
 - 007e70d0 WorldTextInitialize
-- 007eae60 GuildGetTabardCost
 - 007ece40 ConsoleCommand_SkySunGlare
 - 007edbe0 _SUniConvertUTF16to8@24
 - 007f5070 SetupQuad
-- 007f5760 SetupTextureHandles
 - 007f6540 LoadMD5Names
 - 007fcca0 GetStringReason
 - 007fdb50 Spell_C_GetMinMaxPoints
@@ -568,7 +515,6 @@
 - 007fecc0 Spell_C_CancelSpell
 - 00806dd0 SpellStart
 - 00809af0 CastResultHandler
-- 0080abe0 ItemCheckCooldownCallback
 - 0080ac90 SendCast
 - 0080c790 Spell_C_TargetSpell
 - 0080e1b0 SpellGo
